@@ -24,7 +24,7 @@ body{
     background-color: #bbbbbb;
 
 }
-#weekOf{
+#week-of{
     text-align: center;
 }
 
@@ -36,7 +36,34 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
+.schedule{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.schedule-block{
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    background-color: #bbbbbb;
+    text-align: center;
+    overflow:auto;
+}
 .right-side-bar{
-
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+}
+.right-header{
+    text-align: center;
+    font-size: 150%;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    background-color: #bbbbbb;
+}
+.filters{
+    overflow:auto;
+    border-style:solid;
+    border-color:black;
+    border-radius:10px;
+    background-color: #bbbbbb;
 }
