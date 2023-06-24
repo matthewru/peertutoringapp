@@ -1,12 +1,34 @@
+body{
+    height:100vh;
+    margin:0;
+    padding:0;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    width:100px
+    grid-template-columns: 1fr 5fr 2fr;
+    gap: 10px;
+    height:100%;
 }
 .left-side-bar{
     grid-column:1;
     grid-row:1;
+    display:grid;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+    border-radius:5px;
+    border-style:solid;
+    border-color:black;
+    background-color: #cfcfcf;
 }
+.period{
+    font-size:100%;
+    border-radius:10px;
+    background-color: #bbbbbb;
+
+}
+#weekOf{
+    text-align: center;
+}
+
 .main-content{
     grid-column:2;
     grid-row:1;
