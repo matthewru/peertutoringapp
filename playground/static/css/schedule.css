@@ -40,10 +40,11 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.schedule{
+#week-schedule{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .schedule-block{
     border-radius:10px;
     border-style:solid;

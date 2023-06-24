@@ -1,7 +1,8 @@
 
-
+console.log("logged from schedule.js");
 
 (async () => {
+    console.log("Ran");
     period4Button.addEventListener("click", async () => {
         
     })
@@ -19,7 +20,7 @@
 
     // switch to day view if any of these are clicked
     monButton.addEventListener("click", async () => {
-
+        
     })
     tueButton.addEventListener("click", async () => {
 
@@ -41,4 +42,15 @@
     async function dayView() {
     
     }
-})
+
+    
+    function constructDayView(name, period, classes) {
+
+    }
+
+    // reset the displayed schedule, called when switching between day and week view
+    function clearInterface(){
+        
+    }
+
+}) ();
