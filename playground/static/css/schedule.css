@@ -11,22 +11,22 @@ body{
 }
 .left-side-bar{
     display:grid;
-    grid-template-rows: 1fr 2fr 7fr 7fr 7fr;
+    grid-template-rows: 1fr 7fr 7fr 7fr;
     border-radius:5px;
     border-style:solid;
     border-color:black;
     background-color: #cfcfcf;
 }
-#week-view{
-    display:hidden;
-    border-radius:10px;
-    background-color: #bbbbbb;
-}
 .period{
-    font-size:100%;
+    font-size:200%;
     border-radius:10px;
-    background-color: #bbbbbb;
-
+    border-style:solid;
+    border-color:navy;
+    color: blue;
+    background-color: white;
+}
+.period.selected{
+    background-color: orange;
 }
 #week-of{
     text-align: center;
@@ -34,11 +34,21 @@ body{
 
 .main-content{
     display:grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 1fr 12fr;
 }
 .days{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.day{
+    background-color: white;
+    color: blue;
+    border: 3px solid var();
+    border-color: navy;
+    font-size: 150%;
+}
+.day.selected{
+    background-color: orange;
 }
 #week-schedule{
     display:grid;
