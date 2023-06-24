@@ -4,23 +4,24 @@
 <head>
     <title>Peer Tutoring Schedule</title>
     <link rel="stylesheet" type = "text/css" href="{% static 'css/schedule.css' %}">
-    <script src = "{% static 'js/schedule.js' %}"></script>
+    
 </head>
 <body>
     <div class = "grid-container">
         <div class = "left-side-bar">
             <div id = "week-of">Week of 5/12-6/16</div>
-            <button class = "period">4</button>
-            <button class = "period">5</button>
-            <button class = "period">6</button>
+            <button id = "week-view">Switch to week view</button>
+            <button class = "period" id = "period-4">4</button>
+            <button class = "period" id = "period-5">5</button>
+            <button class = "period" id = "period-6">6</button>
         </div>
         <div class = "main-content">
             <div class = "days">
-                <button class = "mon">MONDAY</button>
-                <button class = "tue">TUESDAY</button>
-                <button class = "wed">WEDNESDAY</button>
-                <button class = "thu">THURSDAY</button>
-                <button class = "fri">FRIDAY</button>
+                <button id = "mon">MONDAY</button>
+                <button id = "tue">TUESDAY</button>
+                <button id = "wed">WEDNESDAY</button>
+                <button id = "thu">THURSDAY</button>
+                <button id = "fri">FRIDAY</button>
             </div>
             <div class = "schedule">
                 <div class = "schedule-block">asdfa</div>
@@ -39,5 +40,8 @@
             </div>
         </div>
     </div>
+    <script src = "{% static 'js/elements.js' %}"></script>
+    <script src = "{% static 'js/schedule.js' %}"></script>
+
 </body>
 </html>
