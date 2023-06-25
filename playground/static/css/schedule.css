@@ -1,37 +1,48 @@
 body{
-    height:100vh;
-    margin:0;
+    height:97vh;
+    font-family: 'Geneva', sans-serif;
     padding:0;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-columns: 1fr 8fr 2fr;
     gap: 10px;
     height:100%;
 }
 .left-side-bar{
     display:grid;
     gap: 10px;
-    grid-template-rows: 1fr 7fr 7fr 7fr;
-    border-radius:5px;
-    border-style:solid;
-    border-color: navy;
+    grid-template-rows: 1.5fr 7fr 7fr 7fr;
     background-color: white;
 }
 .period{
-    font-size:200%;
     border-radius:10px;
+    border-width:5px;
     border-style:solid;
     border-color:navy;
     color: navy;
     background-color: white;
+    text-align: center;
+    font-size:12vw;
 }
 .period.selected{
     background-color: navy;
     color: white;
 }
-#week-of{
-    text-align: center;
+#app-title{
+    margin:0;
+    padding-left:4px;
+    padding-top:1px;
+    padding-bottom:1px;
+    vertical-align: middle; 
+    font-size: 2vh;
+    color: navy;
+    background-color: rgb(233, 233, 233);
+    border-left:5px;
+    border-top:0;
+    border-right:0;
+    border-bottom:0;
+    border-style: solid;
 }
 
 .main-content{
@@ -50,7 +61,7 @@ body{
     color: navy;
     border: 3px solid var();
     border-color: navy;
-    font-size: 150%;
+    font-size: 100%;
     border-radius:10px;
 }
 .day.selected{
@@ -87,7 +98,7 @@ body{
 }
 .right-header{
     text-align: center;
-    font-size: 150%;
+    font-size: 100%;
     border-radius:10px;
     border-style:solid;
     border-color:navy;

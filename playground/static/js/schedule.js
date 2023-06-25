@@ -1,8 +1,4 @@
-
-console.log("logged from schedule.js");
-
 (async () => {
-    console.log("Ran");
     weekViewButton.classList.add("selected");
     period4Button.classList.add("selected");
     clearInterface();
