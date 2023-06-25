@@ -11,60 +11,78 @@ body{
 }
 .left-side-bar{
     display:grid;
+    gap: 10px;
     grid-template-rows: 1fr 7fr 7fr 7fr;
     border-radius:5px;
     border-style:solid;
-    border-color:black;
-    background-color: #cfcfcf;
+    border-color: navy;
+    background-color: white;
 }
 .period{
     font-size:200%;
     border-radius:10px;
     border-style:solid;
     border-color:navy;
-    color: blue;
+    color: navy;
     background-color: white;
 }
 .period.selected{
-    background-color: orange;
+    background-color: navy;
+    color: white;
 }
 #week-of{
     text-align: center;
 }
 
 .main-content{
+    margin-top:20px;
     display:grid;
     grid-template-rows: 1fr 1fr 12fr;
+    gap: 5px;
 }
 .days{
     display:grid;
+    gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .day{
     background-color: white;
-    color: blue;
+    color: navy;
     border: 3px solid var();
     border-color: navy;
     font-size: 150%;
+    border-radius:10px;
 }
 .day.selected{
-    background-color: orange;
+    background-color: navy;
+    color: white;
 }
 #week-schedule{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+#day-schedule{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius:10px;
+    border-style:solid;
+    border-color:navy;
+    background-color: white;
+    
+}
 
 .schedule-block{
     border-radius:10px;
     border-style:solid;
-    border-color:black;
-    background-color: #bbbbbb;
+    border-color:navy;
+    background-color: white;
     text-align: center;
     overflow:auto;
 }
 .right-side-bar{
+    margin-top:20px;
     display: grid;
+    gap: 5px;
     grid-template-rows: 1fr 15fr;
 }
 .right-header{
@@ -72,13 +90,13 @@ body{
     font-size: 150%;
     border-radius:10px;
     border-style:solid;
-    border-color:black;
-    background-color: #bbbbbb;
+    border-color:navy;
+    background-color: white;
 }
 .filters{
     overflow:auto;
     border-style:solid;
-    border-color:black;
+    border-color:navy;
     border-radius:10px;
-    background-color: #bbbbbb;
+    background-color: white;
 }

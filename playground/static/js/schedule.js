@@ -5,6 +5,7 @@ console.log("logged from schedule.js");
     console.log("Ran");
     weekViewButton.classList.add("selected");
     period4Button.classList.add("selected");
+    clearInterface();
     await weekView();
     period4Button.addEventListener("click", async () => {
         clearPeriodSelected();
@@ -30,35 +31,38 @@ console.log("logged from schedule.js");
     monButton.addEventListener("click", async () => {
         clearDaySelected();
         monButton.classList.add("selected");
+        await dayView();
     })
     tueButton.addEventListener("click", async () => {
         clearDaySelected();
         tueButton.classList.add("selected");
+        await dayView();
     })
     wedButton.addEventListener("click", async () => {
         clearDaySelected();
         wedButton.classList.add("selected");
+        await dayView();
     })
     thuButton.addEventListener("click", async () => {
         clearDaySelected();
         thuButton.classList.add("selected");
+        await dayView();
     })
     friButton.addEventListener("click", async () => {
         clearDaySelected();
         friButton.classList.add("selected");
+        await dayView();
     })
 
 
     async function weekView() {
-
+        clearInterface();
+        weekSchedule.style.display = "grid";
     }
+
     async function dayView() {
-    
-    }
-
-    
-    function constructDayView(name, period, classes) {
-
+        clearInterface();
+        daySchedule.style.display = "grid";
     }
 
     // clear the selected day
@@ -79,7 +83,8 @@ console.log("logged from schedule.js");
 
     // reset the displayed schedule, called when switching between day and week view
     function clearInterface(){
-        
+        weekSchedule.style.display = "none";
+        daySchedule.style.display = "none";
     }
 
 }) ();
