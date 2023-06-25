@@ -17,7 +17,7 @@
             <button class = "period" id = "period-6">6</button>
         </div>
         <div class = "main-content">
-            <button class = "day" id = "week-view">Week View</button>
+            <button id = "week-view">Week View</button>
             <div class = "days">
                 <button class = "day" id = "mon">Monday</button>
                 <button class = "day" id = "tue">Tuesday</button>
@@ -51,6 +51,9 @@
     <script src="{% static 'js/jquery.fittext.js' %}"></script>
     <script>
         jQuery("#app-title").fitText(0.7);
+        jQuery(".period").fitText(0.065);
+        jQuery(".day").fitText(0.6);
+        jQuery("#week-view").fitText(2.8);
     </script>
 </body>
 </html>

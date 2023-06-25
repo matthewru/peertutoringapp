@@ -22,8 +22,7 @@ body{
     border-color:navy;
     color: navy;
     background-color: white;
-    text-align: center;
-    font-size:12vw;
+    /* text-align: center; */
 }
 .period.selected{
     background-color: navy;
@@ -61,10 +60,20 @@ body{
     color: navy;
     border: 3px solid var();
     border-color: navy;
-    font-size: 100%;
+    border-radius:10px;
+}
+#week-view{
+    background-color: white;
+    color: navy;
+    border: 3px solid var();
+    border-color: navy;
     border-radius:10px;
 }
 .day.selected{
+    background-color: navy;
+    color: white;
+}
+#week-view.selected{
     background-color: navy;
     color: white;
 }
