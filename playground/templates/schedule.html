@@ -39,9 +39,27 @@
         <div id = "right-side-bar">
             <div id = "right-header">Filters</div>
             <div id = "filters">
-                <label>filter1</label>
-                <label>filter2</label>
-                <label>filter3</label>
+                <div class = "filter" id = "math-filters">
+                    math filters here
+                </div>
+                <div class = "filter" id = "science-filters">
+                    science filters here
+                </div>
+                <div class = "filter" id = "comm-arts-filters">
+                    comm arts filters here
+                </div>
+                <div class = "filter" id = "social-science-filters">
+                    social science filters here
+                </div>
+                <div class = "filter" id = "foreign-language-filters">
+                    foreign language filters here
+                </div>
+                <div class = "filter" id = "art-filters">
+                    art filters here
+                </div>
+                <div class = "filter" id = "technology-filters">
+                    technology filters here
+                </div>
             </div>
         </div>
     </div>
@@ -53,7 +71,7 @@
         window.fitText( document.getElementsByClassName("period"), 0.1 );
         window.fitText( document.getElementsByClassName("day"), 0.7 );
         window.fitText( document.getElementById("week-view"), 5 );
-        window.fitText( document.getElementByID("right-header"), 1 );
+        window.fitText( document.getElementById("right-header") );
     </script>
 </body>
 </html>

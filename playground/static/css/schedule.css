@@ -130,19 +130,27 @@ button{
     grid-template-rows: 1fr 13fr;
 }
 #right-header{
+    font-weight:bold;
     color: navy;
     margin-top:20px;
     text-align: center;
-    font-size: 100%;
     border-radius:10px;
     border-style:solid;
     border-color:navy;
     background-color: white;
 }
 #filters{
+    display:flex;
+    flex-direction:column;
     overflow:auto;
     border-style:solid;
     border-color:navy;
     border-radius:10px;
     background-color: white;
+}
+.filter{
+    margin:10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:navy;
 }
