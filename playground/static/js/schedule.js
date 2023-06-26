@@ -3,6 +3,7 @@
     period4Button.classList.add("selected");
     clearInterface();
     await weekView();
+
     period4Button.addEventListener("click", async () => {
         clearPeriodSelected();
         period4Button.classList.add("selected");
@@ -83,4 +84,29 @@
         daySchedule.style.display = "none";
     }
 
+
+
+
+    // Get the tutors from the json file
+    function createTutorObjects(jsonFile){
+        let tutorObjects = [];
+        for (let i = 0; i < jsonFile.length; i++){
+            let tutorObject = new Tutor(jsonFile[i]);
+            tutorObjects.push(tutorObject);
+        }
+        return tutorObjects;
+    }
+
+    // Create a list of tutor objects for each period
+    function sortTutorsByPeriod(tutors){
+
+    }
+
+    // Update the displayed tutors based on the filters
+    //    -- call this every time a filter is changed or the period is changed
+    function updateFilters(){
+
+    }
+
+    
 }) ();
