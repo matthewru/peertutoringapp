@@ -1,0 +1,162 @@
+{
+    "peer tutors": [
+        {
+            "name": "Matthew Ru",
+            "grade": "12",
+            "lunch": "6",
+            "days": [
+                "Wednesday",
+                "Thursday"
+            ],
+            "expertise": [{
+                "Math": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Geometry",
+                    "Pre-Calculus",
+                    "BC Calculus"
+                ],
+                "Science": [
+                    "Biology",
+                    "Chemistry",
+                    "Physics"
+                ],
+                "English": [
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "English 4"
+                ],
+                "History": [
+                    "World History",
+                    "US History",
+                    "Government",
+                    "Economics"
+                ],
+                "Foreign Language": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "Electives": [
+                    "AP Computer Science"
+                ]
+            }]
+        },
+        {
+            "name": "Dylan Ellis",
+            "grade": "12",
+            "lunch": "4",
+            "days": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "expertise": [{
+                "Math": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Geometry",
+                    "Pre-Calculus",
+                    "BC Calculus"
+                ],
+                "Science": [
+                    "Biology",
+                    "Chemistry",
+                    "Physics"
+                ],
+                "English": [
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "English 4"
+                ],
+                "History": [
+                    "World History",
+                    "US History",
+                    "Government",
+                    "Economics"
+                ],
+                "Foreign Language": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "Electives": [
+                    "Intro to Business"
+                ]
+            }]
+        },
+        {
+            "name": "John Harvey",
+            "grade": "12",
+            "lunch": "4",
+            "days": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "expertise": [{
+                "Math": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Geometry",
+                    "Pre-Calculus",
+                    "AB Calculus",
+                    "BC Calculus"
+                ],
+                "Science": [
+                ],
+                "English": [
+                ],
+                "History": [
+                ],
+                "Foreign Language": [
+                ],
+                "Electives": [
+                ]
+            }]
+        }
+        {
+            "name": "Tyler Field",
+            "grade": "12",
+            "lunch": "5",
+            "days": [
+                "Monday",
+                "Tuesday",
+                "Thursday"
+            ],
+            "expertise": [{
+                "Math": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Geometry",
+                    "Pre-Calculus"
+                ],
+                "Science": [
+                    "Biology",
+                    "Chemistry"
+                ],
+                "English": [
+                    "English 1",
+                    "English 2"
+                ],
+                "History": [
+                    "World History",
+                    "American Government"
+                ],
+                "Foreign Language": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "Electives": [
+                    "Computer Programming 1",
+                    "Computer Programming 2",
+                    "AP Computer Science"
+                ]
+            }]
+        }
+    ]
+}
