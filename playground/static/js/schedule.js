@@ -1,4 +1,19 @@
 (async () => {
+
+    // fetch tutor data and create objects/lists
+    const tutorsJson = await fetch("/static/testdata.json").then(res => res.json());
+  
+    const tutors = tutorsJson.peerTutors;
+    
+    // create a seperate list of tutor objects for each period
+    let p4Tutors = tutors.filter(tutor => tutor.lunch.includes("4"));
+    let p5Tutors = tutors.filter(tutor => tutor.lunch.includes("5"));
+    let p6Tutors = tutors.filter(tutor => tutor.lunch.includes("6"));
+    console.log(p4Tutors);
+    console.log(p5Tutors);
+    console.log(p6Tutors);
+
+
     weekViewButton.classList.add("selected");
     period4Button.classList.add("selected");
     clearInterface();
@@ -84,18 +99,6 @@
         daySchedule.style.display = "none";
     }
 
-
-
-
-    // Get the tutors from the json file
-    function createTutorObjects(jsonFile){
-        let tutorObjects = [];
-        for (let i = 0; i < jsonFile.length; i++){
-            let tutorObject = new Tutor(jsonFile[i]);
-            tutorObjects.push(tutorObject);
-        }
-        return tutorObjects;
-    }
 
     // Create a list of tutor objects for each period
     function sortTutorsByPeriod(tutors){
