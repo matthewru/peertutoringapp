@@ -128,6 +128,7 @@ button{
     display: grid;
     gap: 5px;
     grid-template-rows: 1fr 13fr;
+    height: 500px;
 }
 #right-header{
     font-weight:bold;
@@ -140,8 +141,8 @@ button{
     background-color: white;
 }
 #filters{
-    display:flex;
-    flex-direction:column;
+    /* display:flex;
+    flex-direction:column; */
     overflow:auto;
     border-style:solid;
     border-color:navy;

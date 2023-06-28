@@ -40,22 +40,102 @@
             <div id = "right-header">Filters</div>
             <div id = "filters">
                 <div class = "filter" id = "math-filters">
-                    math filters here
+                    <input type = "checkbox" id = "math" class = "filter-checkbox">
+                    <label for = "math" id = "math-label">Math</label><br>
+                    <div id = "math-radio-filters">
+                        <input type = "radio" id = "algebra-1" class = "filter-radio" name = "math">
+                        <label for = "algebra-1" id = "algebra-1-label">Algebra 1</label><br>
+                        <input type = "radio" id = "geometry" class = "filter-radio" name = "math">
+                        <label for = "geometry" id = "geometry-label">Geometry</label><br>
+                        <input type = "radio" id = "algebra-2" class = "filter-radio" name = "math">
+                        <label for = "algebra-2" id = "algebra-2-label">Algebra 2</label><br>
+                        <input type = "radio" id = "precalc" class = "filter-radio" name = "math">
+                        <label for = "precalc" id = "precalc-label">Precalculus</label><br>
+                        <input type = "radio" id = "calc-ab" class = "filter-radio" name = "math">
+                        <label for = "calc-ab" id = "calc-ab-label">Calculus AB</label><br>
+                        <input type = "radio" id = "calc-bc" class = "filter-radio" name = "math">
+                        <label for = "calc-bc" id = "calc-bc-label">Calculus BC</label><br>
+                        <input type = "radio" id = "stats" class = "filter-radio" name = "math">
+                        <label for = "stats" id = "stats-label">Statistics</label><br>
+                    </div>
                 </div>
                 <div class = "filter" id = "science-filters">
-                    science filters here
+                    <input type = "checkbox" id = "science" class = "filter-checkbox">
+                    <label for = "science" id = "science-label">Science</label><br>
+                    <div id = "science-radio-filters">
+                        <input type = "radio" id = "chem" class = "filter-radio" name = "science">
+                        <label for = "chem" id = "chem-label">Chemistry</label><br>
+                        <input type = "radio" id = "bio" class = "filter-radio" name = "science">
+                        <label for = "bio" id = "bio-label">Biology</label><br>
+                        <input type = "radio" id = "physics" class = "filter-radio" name = "science">
+                        <label for = "physics" id = "physics-label">Physics</label><br>
+                    </div>
                 </div>
                 <div class = "filter" id = "comm-arts-filters">
-                    comm arts filters here
+                    <input type = "checkbox" id = "comm-arts" class = "filter-checkbox">
+                    <label for = "comm-arts" id = "comm-arts-label">Communication Arts</label><br>
+                    <div id = "comm-arts-radio-filters">
+                        <input type = "radio" id = "english-1" class = "filter-radio" name = "comm-arts">
+                        <label for = "english-1" id = "english-1-label">English 1</label><br>
+                        <input type = "radio" id = "english-2" class = "filter-radio" name = "comm-arts">
+                        <label for = "english-2" id = "english-2-label">English 2</label><br>
+                        <input type = "radio" id = "english-3" class = "filter-radio" name = "comm-arts">
+                        <label for = "english-3" id = "english-3-label">English 3</label><br>
+                        <input type = "radio" id = "ap-lang" class = "filter-radio" name = "comm-arts">
+                        <label for = "ap-lang" id = "ap-lang-label">AP Language</label><br>
+                        <input type = "radio" id = "ap-lit" class = "filter-radio" name = "comm-arts">
+                        <label for = "ap-lit" id = "ap-lit-label">AP Literature</label><br>
+                    </div>
                 </div>
                 <div class = "filter" id = "social-science-filters">
-                    social science filters here
+                    <input type = "checkbox" id = "social-science-filters" class = "filter-checkbox">
+                    <label for = "social-science-filters" id = "social-science-filters-label">Social Science</label><br>
+                    <div id = "social-science-radio-filters">
+                        <input type = "radio" id = "world-history" class = "filter-radio" name = "social-science">
+                        <label for = "world-history" id = "world-history-label">World History</label><br>
+                        <input type = "radio" id = "us-history" class = "filter-radio" name = "social-science">
+                        <label for = "us-history" id = "us-history-label">US History</label><br>
+                        <input type = "radio" id = "ap-us-history" class = "filter-radio" name = "social-science">
+                        <label for = "ap-us-history" id = "ap-us-history-label">AP US History</label><br>
+                        <input type = "radio" id = "ap-gov" class = "filter-radio" name = "social-science">
+                        <label for = "ap-gov" id = "ap-gov-label">AP Government</label><br>
+                        <input type = "radio" id = "ap-euro" class = "filter-radio" name = "social-science">
+                        <label for = "ap-euro" id = "ap-euro-label">AP European History</label><br>
+                        <input type = "radio" id = "ap-world" class = "filter-radio" name = "social-science">
+                        <label for = "ap-world" id = "ap-world-label">AP World History</label><br>
+                    </div>
                 </div>
                 <div class = "filter" id = "foreign-language-filters">
-                    foreign language filters here
+                    <input type = "checkbox" id = "foreign-language" class = "filter-checkbox">
+                    <label for = "foreign-language" id = "foreign-language-label">Foreign Language</label><br>
+                    <div id = "foreign-language-radio-filters">
+                        <input type = "radio" id = "spanish-1" class = "filter-radio" name = "foreign-language">
+                        <label for = "spanish-1" id = "spanish-1-label">Spanish 1</label><br>
+                        <input type = "radio" id = "spanish-2" class = "filter-radio" name = "foreign-language">
+                        <label for = "spanish-2" id = "spanish-2-label">Spanish 2</label><br>
+                        <input type = "radio" id = "spanish-3" class = "filter-radio" name = "foreign-language">
+                        <label for = "spanish-3" id = "spanish-3-label">Spanish 3</label><br>
+                        <input type = "radio" id = "spanish-4" class = "filter-radio" name = "foreign-language">
+                        <label for = "spanish-4" id = "spanish-4-label">Spanish 4</label><br>
+                        <input type = "radio" id = "ap-spanish" class = "filter-radio" name = "foreign-language">
+                        <label for = "ap-spanish" id = "ap-spanish-label">AP Spanish</label><br>
+                        <input type = "radio" id = "french-1" class = "filter-radio" name = "foreign-language">
+                        <label for = "french-1" id = "french-1-label">French 1</label><br>
+                        <input type = "radio" id = "french-2" class = "filter-radio" name = "foreign-language">
+                        <label for = "french-2" id = "french-2-label">French 2</label><br>
+                    </div>
                 </div>
                 <div class = "filter" id = "elective-filters">
-                    elective filters here
+                    <input type = "checkbox" id = "electives" class = "filter-checkbox">
+                    <label for = "elective" id = "electives-label">Electives</label><br>
+                    <div id = "electives-radio-filters">
+                        <input type = "radio" id = "art" class = "filter-radio" name = "electives">
+                        <label for = "art" id = "art-label">Art</label><br>
+                        <input type = "radio" id = "music" class = "filter-radio" name = "electives">
+                        <label for = "music" id = "music-label">Music</label><br>
+                        <input type = "radio" id = "apcs" class = "filter-radio" name = "electives">
+                        <label for = "apcs" id = "apcs-label">AP Computer Science</label><br>
+                    </div>
                 </div>
             </div>
         </div>
