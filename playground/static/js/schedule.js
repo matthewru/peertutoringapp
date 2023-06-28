@@ -26,20 +26,27 @@
     period4Button.addEventListener("click", async () => {
         clearPeriodSelected();
         period4Button.classList.add("selected");
+        selectedPeriod = 4;
+        updateFilters();
     })
     period5Button.addEventListener("click", async () => {
         clearPeriodSelected();
         period5Button.classList.add("selected");
+        selectedPeriod = 5;
+        updateFilters();
     })
     period6Button.addEventListener("click", async () => {
         clearPeriodSelected();
         period6Button.classList.add("selected");
+        selectedPeriod = 6;
+        updateFilters();
     })
 
     // switch to week view
     weekViewButton.addEventListener("click", async () => {
         clearDaySelected();
         weekViewButton.classList.add("selected");
+        selectedDay = 0;
         await weekView();
     })
 
@@ -47,31 +54,43 @@
     monButton.addEventListener("click", async () => {
         clearDaySelected();
         monButton.classList.add("selected");
+        selectedDay = 1;
         await dayView(1);
     })
     tueButton.addEventListener("click", async () => {
         clearDaySelected();
         tueButton.classList.add("selected");
+        selectedDay = 2;
         await dayView(2);
     })
     wedButton.addEventListener("click", async () => {
         clearDaySelected();
         wedButton.classList.add("selected");
+        selectedDay = 3;
         await dayView(3);
     })
     thuButton.addEventListener("click", async () => {
         clearDaySelected();
         thuButton.classList.add("selected");
+        selectedDay = 4;
         await dayView(4);
     })
     friButton.addEventListener("click", async () => {
         clearDaySelected();
         friButton.classList.add("selected");
+        selectedDay = 5;
         await dayView(5);
     })
 
     // populate week-view div with tutor data for each day - only include name
     async function weekView() {
+        let displayedTutors = updateFilters();
+        // create an array for each day using displayedTutors
+
+        // clear each divs innerHTML
+
+        // populate each days div with tutor names
+
         clearInterface();
         weekSchedule.style.display = "grid";
     }
@@ -82,6 +101,12 @@
      * @returns null - this function updates the interface
      */
     async function dayView(day) {
+        let displayedTutors = updateFilters();
+        // filter displayedTutors to only include tutors available on the selected day
+
+        // clear the dayview divs innerHTML
+
+        // populate the dayview div with tutor names and expertise
         clearInterface();
         daySchedule.style.display = "grid";
     }
@@ -129,7 +154,10 @@
         }
         else{filteredTutors = p6Tutors;}
 
+        
 
+
+        return filteredTutors;
     }
 
     /**
