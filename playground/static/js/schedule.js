@@ -303,7 +303,8 @@
      * @returns {Boolean} - true if the tutor should be displayed, false if not
      */ 
     function filterTutor(tutor){
-
+        // check if the tutor passes all the filters
+        
         return true;
     }
 
