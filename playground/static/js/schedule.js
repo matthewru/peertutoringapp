@@ -153,6 +153,14 @@
      */
     async function dayView(day) {
         let displayedTutors = updateFilters();
+        let dayString = "";
+        if(day == 1){dayString = "Monday";}
+        else if(day == 2){dayString = "Tuesday";}
+        else if(day == 3){dayString = "Wednesday";}
+        else if(day == 4){dayString = "Thursday";}
+        else if(day == 5){dayString = "Friday";}
+        displayedTutors = displayedTutors.filter(tutor => tutor.days.includes(dayString));
+        console.log(displayedTutors)
         // filter displayedTutors to only include tutors available on the selected day
 
         // clear the dayview divs innerHTML
@@ -219,6 +227,14 @@
      */
     function classFilter(tutor){
 
+    }
+
+    function tutorToString(tutor){
+        let tutorString = tutor.name + ": grade " + tutor.grade + "| expertise:";
+        for(let i = 0; i < tutor.expertise.length; i++){
+            tutorString += " " + tutor.expertise[i];
+        }
+        return tutorString;
     }
 
     
