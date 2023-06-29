@@ -206,15 +206,31 @@
      * @returns 
      */
     function constructTutorDiv(tutor){
-        const tutorDiv = document.createElement("div", {class: "tutor"});
-        const tutorName = document.createElement("h3", {class: "tutor-name"});
-        const tutorGrade = document.createElement("p", {class: "tutor-grade"});
-        const tutorExpertise = document.createElement("p", {class: "tutor-expertise"});
+        const tutorDiv = document.createElement("div");
+        tutorDiv.className = "tutor-div";
+        const tutorName = document.createElement("h3");
+        tutorName.className = "tutor-name";
+        const tutorGrade = document.createElement("p");
+        tutorGrade.className = "tutor-grade";
+        const tutorDays = document.createElement("p");
+        tutorDays.className = "tutor-days";
+        const tutorHeader = document.createElement("div");
+        tutorHeader.className = "tutor-header";
+        const tutorExpertise = document.createElement("p");
+        tutorExpertise.className = "tutor-expertise";
+        
+        daysString = "Days: ";
+        for(let i = 0; i < tutor.days.length; i++){
+            daysString += tutor.days[i] + " ";
+        }
         tutorName.innerHTML = tutor.name;
         tutorGrade.innerHTML = tutor.grade;
+        tutorDays.innerHTML = daysString;
         tutorExpertise.innerHTML = tutorExpertiseToString(tutor);
-        tutorDiv.appendChild(tutorName);
-        tutorDiv.appendChild(tutorGrade);
+        tutorHeader.appendChild(tutorName);
+        tutorHeader.appendChild(tutorDays);
+        tutorHeader.appendChild(tutorGrade);
+        tutorDiv.appendChild(tutorHeader);
         tutorDiv.appendChild(tutorExpertise);
         return tutorDiv;
     }

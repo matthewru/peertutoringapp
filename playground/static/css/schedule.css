@@ -116,6 +116,30 @@ button{
     background-color: white;
     
 }
+.tutor-div{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+}
+.tutor-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.tutor-name{
+    
+}
+.tutor-grade{
+    
+}
+.tutor-expertise{
+    margin-top:0;
+    
+}
 
 .schedule-block{
     border-radius:10px;
