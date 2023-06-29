@@ -24,26 +24,33 @@
 
     // update the schedule when a new period is selected
     period4Button.addEventListener("click", async () => {
+        if(selectedPeriod == 4){return;} // do nothing if already in period 4
         clearPeriodSelected();
         period4Button.classList.add("selected");
         selectedPeriod = 4;
-        updateFilters();
+        if(selectedDay == 0){await weekView();}
+        else{await dayView(selectedDay);}
     })
     period5Button.addEventListener("click", async () => {
+        if(selectedPeriod == 5){return;} 
         clearPeriodSelected();
         period5Button.classList.add("selected");
         selectedPeriod = 5;
-        updateFilters();
+        if(selectedDay == 0){await weekView();}
+        else{await dayView(selectedDay);}
     })
     period6Button.addEventListener("click", async () => {
+        if(selectedPeriod == 6){return;}
         clearPeriodSelected();
         period6Button.classList.add("selected");
         selectedPeriod = 6;
-        updateFilters();
+        if(selectedDay == 0){await weekView();}
+        else{await dayView(selectedDay);}
     })
 
     // switch to week view
     weekViewButton.addEventListener("click", async () => {
+        if(selectedDay == 0){return;} // do nothing if already in week view
         clearDaySelected();
         weekViewButton.classList.add("selected");
         selectedDay = 0;
@@ -52,30 +59,35 @@
 
     // switch to day view
     monButton.addEventListener("click", async () => {
+        if(selectedDay == 1){return;}
         clearDaySelected();
         monButton.classList.add("selected");
         selectedDay = 1;
         await dayView(1);
     })
     tueButton.addEventListener("click", async () => {
+        if(selectedDay == 2){return;}
         clearDaySelected();
         tueButton.classList.add("selected");
         selectedDay = 2;
         await dayView(2);
     })
     wedButton.addEventListener("click", async () => {
+        if(selectedDay == 3){return;}
         clearDaySelected();
         wedButton.classList.add("selected");
         selectedDay = 3;
         await dayView(3);
     })
     thuButton.addEventListener("click", async () => {
+        if(selectedDay == 4){return;}
         clearDaySelected();
         thuButton.classList.add("selected");
         selectedDay = 4;
         await dayView(4);
     })
     friButton.addEventListener("click", async () => {
+        if(selectedDay == 5){return;}
         clearDaySelected();
         friButton.classList.add("selected");
         selectedDay = 5;
@@ -131,7 +143,17 @@
             electivesRadioFilters.style.display = "none";
         }
     })
-        
+
+    // update the schedule when the apply filters button is clicked
+    applyFiltersButton.addEventListener("click", async () => {
+        updateFilters();
+        if(selectedDay == 0){
+            await weekView();
+        }
+        else{
+            await dayView(selectedDay);
+        }
+    })
 
     // populate week-view div with tutor data for each day - only include name
     async function weekView() {
@@ -152,6 +174,7 @@
      * @returns null - this function updates the interface
      */
     async function dayView(day) {
+        
         let displayedTutors = updateFilters();
         let dayString = "";
         if(day == 1){dayString = "Monday";}
@@ -159,17 +182,56 @@
         else if(day == 3){dayString = "Wednesday";}
         else if(day == 4){dayString = "Thursday";}
         else if(day == 5){dayString = "Friday";}
+
+        // filter displayedTutors to only include tutors available on the selected day
         displayedTutors = displayedTutors.filter(tutor => tutor.days.includes(dayString));
         console.log(displayedTutors)
-        // filter displayedTutors to only include tutors available on the selected day
-
+        
         // clear the dayview divs innerHTML
+        daySchedule.innerHTML = "";
 
         // populate the dayview div with tutor names and expertise
+        for(let i = 0; i < displayedTutors.length; i++){
+            let tutorDiv = constructTutorDiv(displayedTutors[i]);
+            daySchedule.appendChild(tutorDiv);
+        }
         clearInterface();
         daySchedule.style.display = "grid";
     }
 
+    /**
+     * This function creates a div for an individual tutor that includes their name and expertise
+     *  -- called only in dayView()
+     * @param {*} tutor 
+     * @returns 
+     */
+    function constructTutorDiv(tutor){
+        const tutorDiv = document.createElement("div", {class: "tutor"});
+        const tutorName = document.createElement("h3", {class: "tutor-name"});
+        const tutorGrade = document.createElement("p", {class: "tutor-grade"});
+        const tutorExpertise = document.createElement("p", {class: "tutor-expertise"});
+        tutorName.innerHTML = tutor.name;
+        tutorGrade.innerHTML = tutor.grade;
+        tutorExpertise.innerHTML = tutorExpertiseToString(tutor);
+        tutorDiv.appendChild(tutorName);
+        tutorDiv.appendChild(tutorGrade);
+        tutorDiv.appendChild(tutorExpertise);
+        return tutorDiv;
+    }
+
+    function tutorExpertiseToString(tutor){
+        let tutorString = "";
+
+        for(const subject in tutor.expertise){
+            tutorString += "  " +subject + ": ";
+            console.log(subject)
+            for(let i = 0; i < tutor.expertise[subject].length; i++){
+                tutorString += tutor.expertise[subject][i] + " ";
+            }
+        }
+
+        return tutorString;
+    }
     // clear the selected day every time a new day is selected
     function clearDaySelected(){
         weekViewButton.classList.remove("selected");
@@ -199,7 +261,7 @@
 
     /**
      * Updates the interface and populates the divs with tutors
-     * -- called every time a filter is updated or the period/day is changed
+     * -- called through weekview()/dayview() every time a filter is updated or the period/day is changed
      * @param null - this function uses local variables
      * @returns {Array} filteredTutors - a list of tutor objects that should be displayed
      * */ 
@@ -229,13 +291,7 @@
         return true;
     }
 
-    function tutorToString(tutor){
-        let tutorString = tutor.name + ": grade " + tutor.grade + "| expertise:";
-        for(let i = 0; i < tutor.expertise.length; i++){
-            tutorString += " " + tutor.expertise[i];
-        }
-        return tutorString;
-    }
+    
 
     
 }) ();

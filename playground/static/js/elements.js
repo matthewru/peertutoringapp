@@ -21,3 +21,4 @@ const commArtsRadioFilters = document.getElementById("comm-arts-radio-filters");
 const socialScienceRadioFilters = document.getElementById("social-science-radio-filters");
 const foreignLangRadioFilters = document.getElementById("foreign-language-radio-filters");
 const electivesRadioFilters = document.getElementById("electives-radio-filters");
+const applyFiltersButton = document.getElementById("apply-filters");

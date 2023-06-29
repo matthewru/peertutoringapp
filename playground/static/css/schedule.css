@@ -175,7 +175,7 @@ button{
 #electives-radio-filters{
     display: none;
 }
-#apply-filter{
+#apply-filters{
     margin:10px;
     margin-top:0;
     margin-bottom:0;
@@ -185,7 +185,7 @@ button{
     background-color: white;
     color:navy;
 }
-#apply-filter:active{
+#apply-filters:active{
     background-color: navy;
     color: white;
     transition: 0s;

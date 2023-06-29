@@ -8,7 +8,7 @@
                 "Wednesday",
                 "Thursday"
             ],
-            "expertise": [{
+            "expertise": {
                 "Math": [
                     "Algebra 1",
                     "Algebra 2",
@@ -42,7 +42,7 @@
                 "Electives": [
                     "AP Computer Science"
                 ]
-            }]
+            }
         },
         {
             "name": "Dylan Ellis",
@@ -53,7 +53,7 @@
                 "Wednesday",
                 "Friday"
             ],
-            "expertise": [{
+            "expertise": {
                 "Math": [
                     "Algebra 1",
                     "Algebra 2",
@@ -87,7 +87,7 @@
                 "Electives": [
                     "Intro to Business"
                 ]
-            }]
+            }
         },
         {
             "name": "John Harvey",
@@ -98,7 +98,7 @@
                 "Wednesday",
                 "Friday"
             ],
-            "expertise": [{
+            "expertise": {
                 "Math": [
                     "Algebra 1",
                     "Algebra 2",
@@ -117,7 +117,7 @@
                 ],
                 "Electives": [
                 ]
-            }]
+            }
         },
         {
             "name": "Tyler Field",
@@ -128,7 +128,7 @@
                 "Tuesday",
                 "Thursday"
             ],
-            "expertise": [{
+            "expertise": {
                 "Math": [
                     "Algebra 1",
                     "Algebra 2",
@@ -156,7 +156,7 @@
                     "Computer Programming 2",
                     "AP Computer Science"
                 ]
-            }]
+            }
         }
     ]
 }
