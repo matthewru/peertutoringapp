@@ -175,3 +175,18 @@ button{
 #electives-radio-filters{
     display: none;
 }
+#apply-filter{
+    margin:10px;
+    margin-top:0;
+    margin-bottom:0;
+    border-radius:10px;
+    border-style:solid;
+    border-color:navy;
+    background-color: white;
+    color:navy;
+}
+#apply-filter:active{
+    background-color: navy;
+    color: white;
+    transition: 0s;
+}
