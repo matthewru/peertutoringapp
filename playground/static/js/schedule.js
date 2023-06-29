@@ -12,15 +12,15 @@
     console.log(p5Tutors);
     console.log(p6Tutors);
 
+    // to keep track of the selected period and day
+    let selectedPeriod = 4; 
+    let selectedDay = 0;  // 0 is weekview, 1 is mon, 2 is tue, etc.
+
     // initialize the interface
     weekViewButton.classList.add("selected"); // default to week view and period 4
     period4Button.classList.add("selected");
     clearInterface();
     await weekView();
-
-    // to keep track of the selected period and day
-    let selectedPeriod = 4; 
-    let selectedDay = 0;  // 0 is weekview, 1 is mon, 2 is tue, etc.
 
     // update the schedule when a new period is selected
     period4Button.addEventListener("click", async () => {
@@ -81,6 +81,57 @@
         selectedDay = 5;
         await dayView(5);
     })
+
+    // update the filter tab when a subject is checked
+    mathFilter.addEventListener("change", async () => {
+        if(mathFilter.checked){
+            mathRadioFilters.style.display = "block";
+        }
+        else{
+            mathRadioFilters.style.display = "none";
+        }
+    })
+    scienceFilter.addEventListener("change", async () => {
+        if(scienceFilter.checked){
+            scienceRadioFilters.style.display = "block";
+        }
+        else{
+            scienceRadioFilters.style.display = "none";
+        }
+    })
+    commArtsFilter.addEventListener("change", async () => {
+        if(commArtsFilter.checked){
+            commArtsRadioFilters.style.display = "block";
+        }
+        else{
+            commArtsRadioFilters.style.display = "none";
+        }
+    })
+    socialScienceFilter.addEventListener("change", async () => {
+        if(socialScienceFilter.checked){
+            socialScienceRadioFilters.style.display = "block";
+        }
+        else{
+            socialScienceRadioFilters.style.display = "none";
+        }
+    })
+    foreignLangFilter.addEventListener("change", async () => {
+        if(foreignLangFilter.checked){
+            foreignLangRadioFilters.style.display = "block";
+        }
+        else{
+            foreignLangRadioFilters.style.display = "none";
+        }
+    })
+    electivesFilter.addEventListener("change", async () => {
+        if(electivesFilter.checked){
+            electivesRadioFilters.style.display = "block";
+        }
+        else{
+            electivesRadioFilters.style.display = "none";
+        }
+    })
+        
 
     // populate week-view div with tutor data for each day - only include name
     async function weekView() {

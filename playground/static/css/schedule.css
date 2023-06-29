@@ -18,6 +18,7 @@ button{
     display:grid;
     grid-template-rows: 1.25fr 5fr 5fr 5fr;
     background-color: rgb(216, 237, 255);
+    height: 100vh;
 }
 .period{
     padding:0;
@@ -59,6 +60,7 @@ button{
     display:grid;
     grid-template-rows: 1fr 1fr 12fr;
     gap: 5px;
+    height: 97vh;
 }
 #days{
     margin-left:10px;
@@ -128,7 +130,7 @@ button{
     display: grid;
     gap: 5px;
     grid-template-rows: 1fr 13fr;
-    height: 500px;
+    height: 97vh;
 }
 #right-header{
     font-weight:bold;
@@ -154,4 +156,22 @@ button{
     border-width:2px;
     border-style:solid;
     border-color:navy;
+}
+#math-radio-filters{
+    display: none;
+}
+#science-radio-filters{
+    display: none;
+}
+#comm-arts-radio-filters{
+    display: none;
+}
+#social-science-radio-filters{
+    display: none;
+}
+#foreign-language-radio-filters{
+    display: none;
+}
+#electives-radio-filters{
+    display: none;
 }
