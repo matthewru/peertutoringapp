@@ -213,8 +213,7 @@
         }
         else{filteredTutors = p6Tutors;}
 
-        
-
+        filteredTutors = filteredTutors.filter(tutor => filterTutor(tutor));
 
         return filteredTutors;
     }
@@ -224,9 +223,10 @@
      * -- called only in updateFilters()
      * @param {Object} tutor - the tutor object to be filtered
      * @returns {Boolean} - true if the tutor should be displayed, false if not
-     */
-    function classFilter(tutor){
+     */ 
+    function filterTutor(tutor){
 
+        return true;
     }
 
     function tutorToString(tutor){
