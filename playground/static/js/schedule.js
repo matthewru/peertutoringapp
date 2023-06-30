@@ -3,14 +3,15 @@
     // fetch tutor data and create a list of tutor objects
     const tutorsJson = await fetch("/static/testdata.json").then(res => res.json());
     const tutors = tutorsJson.peerTutors;
+    const classes = await fetch("/static/classestutored.json").then(res => res.json());
+    console.log(classes);
+
+    await createFilters(classes);
 
     // create a seperate list of tutor objects for each period
     let p4Tutors = tutors.filter(tutor => tutor.lunch.includes("4"));
     let p5Tutors = tutors.filter(tutor => tutor.lunch.includes("5"));
     let p6Tutors = tutors.filter(tutor => tutor.lunch.includes("6"));
-    console.log(p4Tutors);
-    console.log(p5Tutors);
-    console.log(p6Tutors);
 
     // to keep track of the selected period and day
     let selectedPeriod = 4; 
@@ -94,56 +95,6 @@
         await dayView(5);
     })
 
-    // update the filter tab when a subject is checked
-    mathFilter.addEventListener("change", async () => {
-        if(mathFilter.checked){
-            mathRadioFilters.style.display = "block";
-        }
-        else{
-            mathRadioFilters.style.display = "none";
-        }
-    })
-    scienceFilter.addEventListener("change", async () => {
-        if(scienceFilter.checked){
-            scienceRadioFilters.style.display = "block";
-        }
-        else{
-            scienceRadioFilters.style.display = "none";
-        }
-    })
-    commArtsFilter.addEventListener("change", async () => {
-        if(commArtsFilter.checked){
-            commArtsRadioFilters.style.display = "block";
-        }
-        else{
-            commArtsRadioFilters.style.display = "none";
-        }
-    })
-    socialScienceFilter.addEventListener("change", async () => {
-        if(socialScienceFilter.checked){
-            socialScienceRadioFilters.style.display = "block";
-        }
-        else{
-            socialScienceRadioFilters.style.display = "none";
-        }
-    })
-    foreignLangFilter.addEventListener("change", async () => {
-        if(foreignLangFilter.checked){
-            foreignLangRadioFilters.style.display = "block";
-        }
-        else{
-            foreignLangRadioFilters.style.display = "none";
-        }
-    })
-    electivesFilter.addEventListener("change", async () => {
-        if(electivesFilter.checked){
-            electivesRadioFilters.style.display = "block";
-        }
-        else{
-            electivesRadioFilters.style.display = "none";
-        }
-    })
-
     // update the schedule when the apply filters button is clicked
     applyFiltersButton.addEventListener("click", async () => {
         updateFilters();
@@ -185,7 +136,6 @@
 
         // filter displayedTutors to only include tutors available on the selected day
         displayedTutors = displayedTutors.filter(tutor => tutor.days.includes(dayString));
-        console.log(displayedTutors)
         
         // clear the dayview divs innerHTML
         daySchedule.innerHTML = "";
@@ -240,7 +190,6 @@
 
         for(const subject in tutor.expertise){
             tutorString += "  " +subject + ": ";
-            console.log(subject)
             for(let i = 0; i < tutor.expertise[subject].length; i++){
                 tutorString += tutor.expertise[subject][i] + " ";
             }
@@ -276,6 +225,65 @@
     }
 
     /**
+     * Creates the filters for the interface using the subjects and classes tutored in the database
+     * -- called only once when the page is loaded
+     * @param {Array} classes - an object containing each subject: all the classes tutored in that subject
+     * @returns null - this function updates the interface
+     * */
+    async function createFilters(classes){
+        for(const subject in classes){
+            // create subject checkbox filter
+            console.log(subject);
+            console.log(classes[subject]);
+            const subjectDiv = document.createElement("div");
+            subjectDiv.className = "subject-div";
+            const subjectCheckbox = document.createElement("input");
+            subjectCheckbox.type = "checkbox";
+            subjectCheckbox.className = "subject-checkbox";
+            subjectCheckbox.id = subject;
+            const subjectName = document.createElement("label");
+            subjectName.className = "subject-name";
+            subjectName.htmlFor = subject;
+            subjectName.innerHTML = subject;
+            subjectDiv.appendChild(subjectCheckbox);
+            subjectDiv.appendChild(subjectName);
+
+            const radioFiltersDiv = document.createElement("div");
+            radioFiltersDiv.className = "radio-filters-div";
+            for(let i = 0; i < classes[subject].length; i++){
+                console.log(classes[subject][i]);
+                const classRadioButton = document.createElement("input");
+                classRadioButton.type = "radio";
+                classRadioButton.className = "class-radio-button";
+                classRadioButton.name = subject;
+                classRadioButton.id = classes[subject][i];
+                const classLabel = document.createElement("label");
+                classLabel.htmlFor = classes[subject][i];
+                classLabel.className = "class-label";
+                classLabel.innerHTML = classes[subject][i];
+                const newLine = document.createElement("br");
+                radioFiltersDiv.appendChild(classRadioButton);
+                radioFiltersDiv.appendChild(classLabel);
+                radioFiltersDiv.appendChild(newLine);
+            }
+            subjectDiv.appendChild(radioFiltersDiv);
+
+            subjectCheckbox.addEventListener("change", async () => {
+                if(subjectCheckbox.checked){
+                    radioFiltersDiv.style.display = "block";
+                }
+                else{
+                    radioFiltersDiv.style.display = "none";
+                }
+            })
+
+            radioFiltersDiv.style.display = "none";
+
+            filters.appendChild(subjectDiv);
+        }
+    }
+
+    /**
      * Updates the interface and populates the divs with tutors
      * -- called through weekview()/dayview() every time a filter is updated or the period/day is changed
      * @param null - this function uses local variables
@@ -304,7 +312,7 @@
      */ 
     function filterTutor(tutor){
         // check if the tutor passes all the filters
-        
+
         return true;
     }
 
