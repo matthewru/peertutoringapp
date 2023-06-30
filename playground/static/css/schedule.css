@@ -175,29 +175,28 @@ button{
     border-radius:10px;
     background-color: white;
 }
-.filter{
+.filter-div{
     margin:10px;
     border-width:2px;
     border-style:solid;
     border-color:navy;
 }
-#math-radio-filters{
-    display: none;
+.filter-checkbox{
+    border-color:navy;
+    color:navy;
 }
-#science-radio-filters{
-    display: none;
+.filter-name{
+    color:navy;
 }
-#comm-arts-radio-filters{
-    display: none;
+.filter-radio-div{
+
 }
-#social-science-radio-filters{
-    display: none;
+.filter-radio-button{
+    border-color:navy;
+    color:navy;
 }
-#foreign-language-radio-filters{
-    display: none;
-}
-#electives-radio-filters{
-    display: none;
+.filter-radio-label{
+    color:navy;
 }
 #apply-filters{
     margin:10px;

@@ -236,30 +236,30 @@
             console.log(subject);
             console.log(classes[subject]);
             const subjectDiv = document.createElement("div");
-            subjectDiv.className = "subject-div";
+            subjectDiv.className = "filter-div";
             const subjectCheckbox = document.createElement("input");
             subjectCheckbox.type = "checkbox";
-            subjectCheckbox.className = "subject-checkbox";
+            subjectCheckbox.className = "filter-checkbox";
             subjectCheckbox.id = subject;
             const subjectName = document.createElement("label");
-            subjectName.className = "subject-name";
+            subjectName.className = "filter-name";
             subjectName.htmlFor = subject;
             subjectName.innerHTML = subject;
             subjectDiv.appendChild(subjectCheckbox);
             subjectDiv.appendChild(subjectName);
 
             const radioFiltersDiv = document.createElement("div");
-            radioFiltersDiv.className = "radio-filters-div";
+            radioFiltersDiv.className = "filter-radio-div";
             for(let i = 0; i < classes[subject].length; i++){
                 console.log(classes[subject][i]);
                 const classRadioButton = document.createElement("input");
                 classRadioButton.type = "radio";
-                classRadioButton.className = "class-radio-button";
+                classRadioButton.className = "filter-radio-button";
                 classRadioButton.name = subject;
                 classRadioButton.id = classes[subject][i];
                 const classLabel = document.createElement("label");
                 classLabel.htmlFor = classes[subject][i];
-                classLabel.className = "class-label";
+                classLabel.className = "filter-radio-label";
                 classLabel.innerHTML = classes[subject][i];
                 const newLine = document.createElement("br");
                 radioFiltersDiv.appendChild(classRadioButton);
