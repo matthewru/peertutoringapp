@@ -158,7 +158,7 @@
     function constructTutorDiv(tutor){
         const tutorDiv = document.createElement("div");
         tutorDiv.className = "tutor-div";
-        const tutorName = document.createElement("h3");
+        const tutorName = document.createElement("h2");
         tutorName.className = "tutor-name";
         const tutorGrade = document.createElement("p");
         tutorGrade.className = "tutor-grade";
@@ -166,7 +166,7 @@
         tutorDays.className = "tutor-days";
         const tutorHeader = document.createElement("div");
         tutorHeader.className = "tutor-header";
-        const tutorExpertise = document.createElement("p");
+        const tutorExpertise = tutorExpertiseToString(tutor);
         tutorExpertise.className = "tutor-expertise";
         
         daysString = "Days: ";
@@ -179,7 +179,6 @@
         tutorName.innerHTML = tutor.name;
         tutorGrade.innerHTML = "Gr: " + tutor.grade;
         tutorDays.innerHTML = daysString;
-        tutorExpertise.innerHTML = tutorExpertiseToString(tutor);
         tutorHeader.appendChild(tutorName);
         tutorHeader.appendChild(tutorDays);
         tutorHeader.appendChild(tutorGrade);
@@ -189,21 +188,31 @@
     }
 
     function tutorExpertiseToString(tutor){
-        let tutorString = "Expertise: ";
+        const tutorExpertise = document.createElement("div");
+        const tutorExpertiseHeader = document.createElement("h3");
+        tutorExpertiseHeader.className = "tutor-expertise-header";
+        tutorExpertiseHeader.innerHTML = "Expertise: ";
+        tutorExpertise.appendChild(tutorExpertiseHeader);
 
         for(const subject in tutor.expertise){
             if(tutor.expertise[subject].length == 0){continue;} // skip subjects with no expertise (empty array)
-            tutorString += "  " +subject + ": ";
+            const tutorSubject = document.createElement("h4");
+            tutorSubject.className = "tutor-expertise-subject";
+            tutorSubject.innerHTML = subject + ": ";
+            tutorExpertise.appendChild(tutorSubject);
+            let expertise = document.createElement("p");
+            expertise.className = "tutor-expertise-classes";
             for(let i = 0; i < tutor.expertise[subject].length; i++){
-                tutorString += tutor.expertise[subject][i];
-                if (i != tutor.expertise[subject].length - 1){tutorString += ", ";} 
-            }
-            tutorString += "|"
+                
+                expertise.innerHTML += tutor.expertise[subject][i];
+                if (i != tutor.expertise[subject].length - 1){expertise.innerHTML += ", ";}
+            } 
+            expertise.innerHTML += "|"
+            tutorExpertise.appendChild(expertise);
         }
-
-        return tutorString;
+        return tutorExpertise;
     }
-    
+
     // clear the selected day every time a new day is selected
     function clearDaySelected(){
         weekViewButton.classList.remove("selected");

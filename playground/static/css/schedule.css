@@ -149,7 +149,22 @@ button{
     margin-top:0;
     color: navy;
 }
-
+.tutor-expertise-header{
+    max-width:100%;
+    color:navy;
+    margin:0;
+    display:inline;
+}
+.tutor-expertise-subject{
+    color:navy;
+    margin:0;
+    display:inline;
+}
+.tutor-expertise-classes{
+    color:navy;
+    margin:0;
+    display:inline;
+}
 .schedule-block{
     border-radius:10px;
     border-style:solid;
