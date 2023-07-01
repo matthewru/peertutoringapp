@@ -109,11 +109,57 @@
     // populate week-view div with tutor data for each day - only include name
     async function weekView() {
         let displayedTutors = updateFilters();
+
         // create an array for each day using displayedTutors
+        let monTutors = displayedTutors.filter(tutor => tutor.days.includes("Monday"));
+        let tueTutors = displayedTutors.filter(tutor => tutor.days.includes("Tuesday"));
+        let wedTutors = displayedTutors.filter(tutor => tutor.days.includes("Wednesday"));
+        let thuTutors = displayedTutors.filter(tutor => tutor.days.includes("Thursday"));
+        let friTutors = displayedTutors.filter(tutor => tutor.days.includes("Friday"));
 
         // clear each divs innerHTML
+        monSchedule.innerHTML = "";
+        tueSchedule.innerHTML = "";
+        wedSchedule.innerHTML = "";
+        thuSchedule.innerHTML = "";
+        friSchedule.innerHTML = "";
 
         // populate each days div with tutor names
+        for(let i = 0; i < monTutors.length; i++){
+            let tutor = monTutors[i];
+            let tutorDiv = document.createElement("div");
+            tutorDiv.classList.add("tutor-week-view");
+            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            monSchedule.appendChild(tutorDiv);
+        }
+        for(let i = 0; i < tueTutors.length; i++){
+            let tutor = tueTutors[i];
+            let tutorDiv = document.createElement("div");
+            tutorDiv.classList.add("tutor-week-view");
+            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tueSchedule.appendChild(tutorDiv);
+        }
+        for(let i = 0; i < wedTutors.length; i++){
+            let tutor = wedTutors[i];
+            let tutorDiv = document.createElement("div");
+            tutorDiv.classList.add("tutor-week-view");
+            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            wedSchedule.appendChild(tutorDiv);
+        }
+        for(let i = 0; i < thuTutors.length; i++){
+            let tutor = thuTutors[i];
+            let tutorDiv = document.createElement("div");
+            tutorDiv.classList.add("tutor-week-view");
+            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            thuSchedule.appendChild(tutorDiv);
+        }
+        for(let i = 0; i < friTutors.length; i++){
+            let tutor = friTutors[i];
+            let tutorDiv = document.createElement("div");
+            tutorDiv.classList.add("tutor-week-view");
+            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            friSchedule.appendChild(tutorDiv);
+        }
 
         clearInterface();
         weekSchedule.style.display = "grid";

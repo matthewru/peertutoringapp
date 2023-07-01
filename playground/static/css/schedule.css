@@ -165,6 +165,10 @@ button{
     margin:0;
     display:inline;
 }
+.tutor-week-view{
+    color:navy;
+    margin-top:5px;
+}
 .schedule-block{
     border-radius:10px;
     border-style:solid;
