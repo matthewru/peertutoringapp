@@ -171,10 +171,13 @@
         
         daysString = "Days: ";
         for(let i = 0; i < tutor.days.length; i++){
-            daysString += tutor.days[i] + " ";
+            daysString += tutor.days[i];
+            if(i != tutor.days.length - 1){
+                daysString += ", ";
+            }
         }
         tutorName.innerHTML = tutor.name;
-        tutorGrade.innerHTML = tutor.grade;
+        tutorGrade.innerHTML = "Gr: " + tutor.grade;
         tutorDays.innerHTML = daysString;
         tutorExpertise.innerHTML = tutorExpertiseToString(tutor);
         tutorHeader.appendChild(tutorName);
@@ -186,17 +189,21 @@
     }
 
     function tutorExpertiseToString(tutor){
-        let tutorString = "";
+        let tutorString = "Expertise: ";
 
         for(const subject in tutor.expertise){
+            if(tutor.expertise[subject].length == 0){continue;} // skip subjects with no expertise (empty array)
             tutorString += "  " +subject + ": ";
             for(let i = 0; i < tutor.expertise[subject].length; i++){
-                tutorString += tutor.expertise[subject][i] + " ";
+                tutorString += tutor.expertise[subject][i];
+                if (i != tutor.expertise[subject].length - 1){tutorString += ", ";} 
             }
+            tutorString += "|"
         }
 
         return tutorString;
     }
+    
     // clear the selected day every time a new day is selected
     function clearDaySelected(){
         weekViewButton.classList.remove("selected");
@@ -276,8 +283,6 @@
                     radioFiltersDiv.style.display = "none";
                 }
             })
-
-            radioFiltersDiv.style.display = "none";
 
             filters.appendChild(subjectDiv);
         }
