@@ -123,7 +123,10 @@ button{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    
+    border-radius:5px;
+    border-style:solid;
+    border-color:navy;
+    padding:10px;
 }
 .tutor-header{
     display:flex;
@@ -131,14 +134,20 @@ button{
     justify-content:space-between;
 }
 .tutor-name{
-    
+    color:navy;
+    margin:0;
+}
+.tutor-days{
+    color:navy;
+    margin:0;
 }
 .tutor-grade{
-    
+    color:navy;
+    margin:0;
 }
 .tutor-expertise{
     margin-top:0;
-    
+    color: navy;
 }
 
 .schedule-block{
@@ -189,7 +198,7 @@ button{
     color:navy;
 }
 .filter-radio-div{
-
+    display:none;
 }
 .filter-radio-button{
     border-color:navy;
