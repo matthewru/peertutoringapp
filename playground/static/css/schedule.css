@@ -9,6 +9,9 @@ button{
     cursor: pointer;
     transition: 0.3s;
 }
+input,label{
+    cursor:pointer;
+}
 #grid-container {
     display: grid;
     grid-template-columns: 1.2fr 8fr 2fr;
