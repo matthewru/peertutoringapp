@@ -6,6 +6,9 @@
     const classes = await fetch("/static/classestutored.json").then(res => res.json());
     console.log(classes);
 
+    let classFilters = {}; // object to keep track of which classes are selected for filtering
+    // each subject/class is a key that returns true/false, set in createFilters()
+
     await createFilters(classes);
 
     // create a seperate list of tutor objects for each period
@@ -97,7 +100,6 @@
 
     // update the schedule when the apply filters button is clicked
     applyFiltersButton.addEventListener("click", async () => {
-        updateFilters();
         if(selectedDay == 0){
             await weekView();
         }
@@ -310,9 +312,24 @@
             subjectDiv.appendChild(subjectCheckbox);
             subjectDiv.appendChild(subjectName);
 
+            classFilters[subjectCheckbox.id] = false;
+            subjectCheckbox.addEventListener("change", function(){
+                if(subjectCheckbox.checked){
+                    classFilters[subjectCheckbox.id] = true;
+                }
+                else{
+                    //document[form][name][0].checked = true;
+                    //document[form][name][0].checked = false;
+
+                    classFilters[subjectCheckbox.id] = false;
+                }
+            });
+
             const radioFiltersDiv = document.createElement("div");
             radioFiltersDiv.className = "filter-radio-div";
+            // ***TODO wrap the radio buttons in a form so it can be cleared when the subject is unchecked
             for(let i = 0; i < classes[subject].length; i++){
+                
                 console.log(classes[subject][i]);
                 const classRadioButton = document.createElement("input");
                 classRadioButton.type = "radio";
@@ -327,6 +344,16 @@
                 radioFiltersDiv.appendChild(classRadioButton);
                 radioFiltersDiv.appendChild(classLabel);
                 radioFiltersDiv.appendChild(newLine);
+
+                classFilters[classRadioButton.id] = false;
+                classRadioButton.addEventListener("change", function(){
+                    if(classRadioButton.checked){
+                        classFilters[classRadioButton.id] = true;
+                    }
+                    else{
+                        classFilters[classRadioButton.id] = false;
+                    }
+                });
             }
             subjectDiv.appendChild(radioFiltersDiv);
 
