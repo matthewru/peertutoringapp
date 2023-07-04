@@ -4,10 +4,9 @@
     const tutorsJson = await fetch("/static/testdata.json").then(res => res.json());
     const tutors = tutorsJson.peerTutors;
     const classes = await fetch("/static/classestutored.json").then(res => res.json());
-    console.log(classes);
 
     let classFilters = {}; // object to keep track of which classes are selected for filtering
-    // each subject/class is a key that returns true/false, set in createFilters()
+    // each subject/class is a key that returns true/false, initialized in createFilters() and set through event listeners
 
     await createFilters(classes);
 
@@ -295,6 +294,7 @@
     }
 
     // clear the selected day every time a new day is selected
+    // -- called in week view and day button event listeners
     function clearDaySelected(){
         weekViewButton.classList.remove("selected");
         monButton.classList.remove("selected");
@@ -305,6 +305,7 @@
     }
 
     // clear the selected period every time a new period is selected
+    // -- called in period button event listeners
     function clearPeriodSelected(){
         period4Button.classList.remove("selected");
         period5Button.classList.remove("selected");
@@ -329,9 +330,8 @@
      * */
     async function createFilters(classes){
         for(const subject in classes){
-            // create subject checkbox filter
-            console.log(subject);
-            console.log(classes[subject]);
+
+            // create subject filter as a checkbox
             const subjectDiv = document.createElement("div");
             subjectDiv.className = "filter-div";
             const subjectCheckbox = document.createElement("input");
@@ -351,6 +351,7 @@
                     classFilters[subjectCheckbox.id] = true;
                 }
                 else{
+                    // uncheck all the classes in the subject
                     document.getElementById(classes[subject][0]).checked = true;
                     document.getElementById(classes[subject][0]).checked = false;
                     classFilters[subjectCheckbox.id] = false;
@@ -360,9 +361,8 @@
             const radioFiltersForm = document.createElement("form");
             radioFiltersForm.className = "filter-radio-form";
 
+            // create class filters as radio buttons inside a form
             for(let i = 0; i < classes[subject].length; i++){
-                
-                console.log(classes[subject][i]);
                 const classRadioButton = document.createElement("input");
                 classRadioButton.type = "radio";
                 classRadioButton.className = "filter-radio-button";
@@ -389,6 +389,7 @@
             }
             subjectDiv.appendChild(radioFiltersForm);
 
+            // hide the class filters until the subject filter is checked
             subjectCheckbox.addEventListener("change", async () => {
                 if(subjectCheckbox.checked){
                     radioFiltersForm.style.display = "block";
@@ -441,5 +442,5 @@
         }
         return true;
     }
-    
+
 }) ();

@@ -218,6 +218,7 @@ input,label{
 }
 .filter-name{
     color:navy;
+    overflow-wrap: break-word;
 }
 .filter-radio-form{
     display:none;
@@ -228,6 +229,7 @@ input,label{
 }
 .filter-radio-label{
     color:navy;
+    overflow-wrap: break-word;
 }
 #apply-filters, #clear-filters{
     margin:10px;
