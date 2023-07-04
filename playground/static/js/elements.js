@@ -16,3 +16,4 @@ const weekSchedule = document.getElementById("week-schedule");
 const daySchedule = document.getElementById("day-schedule");
 const filters = document.getElementById("filters");
 const applyFiltersButton = document.getElementById("apply-filters");
+const clearFiltersButton = document.getElementById("clear-filters");

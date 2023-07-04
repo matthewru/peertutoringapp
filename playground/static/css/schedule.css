@@ -219,7 +219,7 @@ input,label{
 .filter-name{
     color:navy;
 }
-.filter-radio-div{
+.filter-radio-form{
     display:none;
 }
 .filter-radio-button{
@@ -229,7 +229,7 @@ input,label{
 .filter-radio-label{
     color:navy;
 }
-#apply-filters{
+#apply-filters, #clear-filters{
     margin:10px;
     margin-top:0;
     margin-bottom:0;
@@ -239,7 +239,7 @@ input,label{
     background-color: white;
     color:navy;
 }
-#apply-filters:active{
+#apply-filters:active, #clear-filters:active{
     background-color: navy;
     color: white;
     transition: 0s;

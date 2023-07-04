@@ -108,7 +108,33 @@
         }
     })
 
-    // populate week-view div with tutor data for each day - only include name
+    // clear all filters when the clear filters button is clicked
+    clearFiltersButton.addEventListener("click", async () => {
+        for(const subject in classes){
+            document.getElementById(subject).checked = false;
+            classFilters[subject] = false;
+        }
+        const forms = document.getElementsByClassName("filter-radio-form");
+        for(let i = 0; i < forms.length; i++){
+            forms[i].style.display = "none";
+            classFilters[forms[i].id] = false;
+            for(let j = 0; j < forms[i].children.length; j++){
+                if(forms[i].children[j].type == "radio"){
+                    forms[i].children[j].checked = false;
+                }
+            }
+        }
+
+        // Refresh the schedule
+        if(selectedDay == 0){
+            await weekView();
+        }
+        else{
+            await dayView(selectedDay);
+        }
+    })
+
+    // populate week-view div with tutor data for each day - only include name and grade
     async function weekView() {
         let displayedTutors = updateFilters();
 
@@ -214,7 +240,7 @@
         tutorDays.className = "tutor-days";
         const tutorHeader = document.createElement("div");
         tutorHeader.className = "tutor-header";
-        const tutorExpertise = tutorExpertiseToString(tutor);
+        const tutorExpertise = tutorExpertiseToDiv(tutor);
         tutorExpertise.className = "tutor-expertise";
         
         daysString = "Days: ";
@@ -235,7 +261,14 @@
         return tutorDiv;
     }
 
-    function tutorExpertiseToString(tutor){
+    /**
+     *  This function creates a div that displays the tutors expertise, formatted as follows:
+     *     Expertise: class: classes| class: classes| class: classes|...
+     *  -- called only in constructTutorDiv(), used for dayview
+     * @param {*} tutor 
+     * @returns 
+     */
+    function tutorExpertiseToDiv(tutor){
         const tutorExpertise = document.createElement("div");
         const tutorExpertiseHeader = document.createElement("h3");
         tutorExpertiseHeader.className = "tutor-expertise-header";
@@ -318,16 +351,15 @@
                     classFilters[subjectCheckbox.id] = true;
                 }
                 else{
-                    //document[form][name][0].checked = true;
-                    //document[form][name][0].checked = false;
-
+                    document.getElementById(classes[subject][0]).checked = true;
+                    document.getElementById(classes[subject][0]).checked = false;
                     classFilters[subjectCheckbox.id] = false;
                 }
             });
 
-            const radioFiltersDiv = document.createElement("div");
-            radioFiltersDiv.className = "filter-radio-div";
-            // ***TODO wrap the radio buttons in a form so it can be cleared when the subject is unchecked
+            const radioFiltersForm = document.createElement("form");
+            radioFiltersForm.className = "filter-radio-form";
+
             for(let i = 0; i < classes[subject].length; i++){
                 
                 console.log(classes[subject][i]);
@@ -341,9 +373,9 @@
                 classLabel.className = "filter-radio-label";
                 classLabel.innerHTML = classes[subject][i];
                 const newLine = document.createElement("br");
-                radioFiltersDiv.appendChild(classRadioButton);
-                radioFiltersDiv.appendChild(classLabel);
-                radioFiltersDiv.appendChild(newLine);
+                radioFiltersForm.appendChild(classRadioButton);
+                radioFiltersForm.appendChild(classLabel);
+                radioFiltersForm.appendChild(newLine);
 
                 classFilters[classRadioButton.id] = false;
                 classRadioButton.addEventListener("change", function(){
@@ -355,14 +387,14 @@
                     }
                 });
             }
-            subjectDiv.appendChild(radioFiltersDiv);
+            subjectDiv.appendChild(radioFiltersForm);
 
             subjectCheckbox.addEventListener("change", async () => {
                 if(subjectCheckbox.checked){
-                    radioFiltersDiv.style.display = "block";
+                    radioFiltersForm.style.display = "block";
                 }
                 else{
-                    radioFiltersDiv.style.display = "none";
+                    radioFiltersForm.style.display = "none";
                 }
             })
 
@@ -399,11 +431,15 @@
      */ 
     function filterTutor(tutor){
         // check if the tutor passes all the filters
-
+        for(const subject in classes){
+            if(classFilters[subject] == false){continue;} // skip subjects that are not selected
+            for(let i = 0; i < classes[subject].length; i++){
+                if(classFilters[classes[subject][i]] == true && (tutor.expertise[subject] == null || !tutor.expertise[subject].includes(classes[subject][i]))){
+                    return false;
+                }
+            }
+        }
         return true;
     }
-
-    
-
     
 }) ();
