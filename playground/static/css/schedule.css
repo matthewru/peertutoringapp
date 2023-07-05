@@ -1,28 +1,41 @@
 body{
     height:97vh;
     font-family: 'Geneva', sans-serif;
+    background-color: rgb(216, 237, 255);
+    margin:0;
     padding:0;
 }
-.grid-container {
+button{
+    cursor: pointer;
+    transition: 0.3s;
+}
+input,label{
+    cursor:pointer;
+}
+#grid-container {
     display: grid;
-    grid-template-columns: 1fr 8fr 2fr;
-    gap: 10px;
+    grid-template-columns: 1.2fr 8fr 2fr;
     height:100%;
 }
-.left-side-bar{
+#left-side-bar{
     display:grid;
-    gap: 10px;
-    grid-template-rows: 1.5fr 7fr 7fr 7fr;
-    background-color: white;
+    grid-template-rows: 1.25fr 5fr 5fr 5fr;
+    background-color: rgb(216, 237, 255);
+    height: 100vh;
 }
 .period{
+    padding:0;
+    margin:10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right:1vw;
     border-radius:10px;
     border-width:5px;
     border-style:solid;
     border-color:navy;
     color: navy;
     background-color: white;
-    /* text-align: center; */
 }
 .period.selected{
     background-color: navy;
@@ -36,7 +49,8 @@ body{
     vertical-align: middle; 
     font-size: 2vh;
     color: navy;
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
+    background-color: white;
     border-left:5px;
     border-top:0;
     border-right:0;
@@ -44,28 +58,38 @@ body{
     border-style: solid;
 }
 
-.main-content{
-    margin-top:20px;
+#main-content{
+    background-color: rgb(216, 237, 255);
     display:grid;
     grid-template-rows: 1fr 1fr 12fr;
     gap: 5px;
+    height: 97vh;
 }
-.days{
+#days{
+    margin-left:10px;
+    margin-right:10px;
     display:grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .day{
+    font-weight:bold;
     background-color: white;
     color: navy;
-    border: 3px solid var();
+    border-width:4px;
+    border-style:solid;
     border-color: navy;
     border-radius:10px;
 }
 #week-view{
+    font-weight:bold;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
     background-color: white;
     color: navy;
-    border: 3px solid var();
+    border-width:4px;
+    border-style:solid;
     border-color: navy;
     border-radius:10px;
 }
@@ -78,10 +102,15 @@ body{
     color: white;
 }
 #week-schedule{
+    margin-left:10px;
+    margin-right:10px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 #day-schedule{
+    overflow:auto;
+    margin-left:10px;
+    margin-right:10px;
     display:grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     border-radius:10px;
@@ -90,7 +119,59 @@ body{
     background-color: white;
     
 }
-
+.tutor-div{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius:5px;
+    border-style:solid;
+    border-color:navy;
+    padding:10px;
+}
+.tutor-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.tutor-name{
+    color:navy;
+    margin:0;
+}
+.tutor-days{
+    color:navy;
+    margin:0;
+}
+.tutor-grade{
+    color:navy;
+    margin:0;
+}
+.tutor-expertise{
+    margin-top:0;
+    color: navy;
+}
+.tutor-expertise-header{
+    max-width:100%;
+    color:navy;
+    margin:0;
+    display:inline;
+}
+.tutor-expertise-subject{
+    color:navy;
+    margin:0;
+    display:inline;
+}
+.tutor-expertise-classes{
+    color:navy;
+    margin:0;
+    display:inline;
+}
+.tutor-week-view{
+    color:navy;
+    margin-top:5px;
+}
 .schedule-block{
     border-radius:10px;
     border-style:solid;
@@ -99,24 +180,69 @@ body{
     text-align: center;
     overflow:auto;
 }
-.right-side-bar{
-    margin-top:20px;
+#right-side-bar{
+    background-color: rgb(216, 237, 255);
     display: grid;
     gap: 5px;
-    grid-template-rows: 1fr 15fr;
+    grid-template-rows: 1fr 13fr;
+    height: 97vh;
 }
-.right-header{
+#right-header{
+    font-weight:bold;
+    color: navy;
+    margin-top:20px;
     text-align: center;
-    font-size: 100%;
     border-radius:10px;
     border-style:solid;
     border-color:navy;
     background-color: white;
 }
-.filters{
+#filters{
+    /* display:flex;
+    flex-direction:column; */
     overflow:auto;
     border-style:solid;
     border-color:navy;
     border-radius:10px;
     background-color: white;
+}
+.filter-div{
+    margin:10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:navy;
+}
+.filter-checkbox{
+    border-color:navy;
+    color:navy;
+}
+.filter-name{
+    color:navy;
+    overflow-wrap: break-word;
+}
+.filter-radio-form{
+    display:none;
+}
+.filter-radio-button{
+    border-color:navy;
+    color:navy;
+}
+.filter-radio-label{
+    color:navy;
+    overflow-wrap: break-word;
+}
+#apply-filters, #clear-filters{
+    margin:10px;
+    margin-top:0;
+    margin-bottom:0;
+    border-radius:10px;
+    border-style:solid;
+    border-color:navy;
+    background-color: white;
+    color:navy;
+}
+#apply-filters:active, #clear-filters:active{
+    background-color: navy;
+    color: white;
+    transition: 0s;
 }

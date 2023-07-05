@@ -1,0 +1,81 @@
+{
+    "Math":[
+        "Algebra 1",
+        "Geometry",
+        "Algebra 2",
+        "Pre-Calculus",
+        "AP Calculus AB",
+        "AP Calculus BC",
+        "AP Statistics",
+        "MVC/ELA"
+    ],
+    "Science":[
+        "Chemistry",
+        "Advanced Chemistry",
+        "AP Chemistry",
+        "Biology",
+        "AP Biology",
+        "Physics",
+        "AP Physics 1",
+        "AP Physics 2",
+        "AP Physics C",
+        "AP Environmental Science",
+        "Anatomy and Physiology"
+    ],
+    "English":[
+        "English 1",
+        "English 2",
+        "English 3",
+        "AP English Language and Composition",
+        "Senior Rhetoric",
+        "AP English Literature and Composition"
+    ],
+    "History":[
+        "World History",
+        "World Cultures",
+        "AP World History",
+        "AP Human Geography",
+        "Government",
+        "AP US Govt and Politics",
+        "AP Comparative/Politics",
+        "US History",
+        "AP US History",
+        "AP European History",
+        "Economics",
+        "AP Microeconomics",
+        "AP Macroeconomics",
+        "Psychology",
+        "AP Psychology"
+    ],
+    "World Language":[
+        "ASL 1",
+        "ASL 2",
+        "Chinese 1",
+        "Chinese 2",
+        "Chinese 3",
+        "Chinese 4",
+        "AP Chinese",
+        "French 1",
+        "French 2",
+        "French 3",
+        "French 4",
+        "AP French",
+        "Spanish 1",
+        "Spanish 2",
+        "Spanish 3",
+        "Spanish 4",
+        "Spanish 5",
+        "AP Spanish Language",
+        "German 1",
+        "German 2",
+        "German 3",
+        "German 4",
+        "AP German",
+        "Latin"
+    ],
+    "Elective":[
+        "AP Computer Science A",
+        "AP Music Theory",
+        "Accounting"
+    ]
+}
