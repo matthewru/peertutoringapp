@@ -1,0 +1,2861 @@
+{
+    "peer_tutors": [
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Thursay",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Kaylee",
+            "LAST_NAME": "Ahn",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World Cultures",
+                    "AP Comparative Gov",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "2",
+                    "3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors Englsh 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Adam",
+            "LAST_NAME": "Al Shekha",
+            "EXPERTISE": {
+                "MATH": [
+                    "PreCalc",
+                    "Algebra 2",
+                    "Geometry"
+                ],
+                "SCIENCE": [
+                    " Physics",
+                    "Physics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "German 1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "ENGLISH": [
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Econ",
+                    "Business Incubator"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Abby",
+            "LAST_NAME": "Baldinger",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Honors Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "Engish 2",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1,Computer Programming 2",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Aarush",
+            "LAST_NAME": "Bhardwaj",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors PreCalc",
+                    "Honors Algebra 2",
+                    "Geometry",
+                    "Algebra 1"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Claire",
+            "LAST_NAME": "Chen",
+            "EXPERTISE": {
+                "MATH": [
+                    "Up to MVC"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "AP Bio",
+                    "HOnors Chemistry",
+                    "Physics 1"
+                ],
+                "HISTORY": [
+                    "AP US History",
+                    "US Government",
+                    "Comparative Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Chinese (up to and including AP)"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Soohyun",
+            "LAST_NAME": "Cho",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Algebra 2",
+                    "Geometry",
+                    "PreCalc",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Physics",
+                    "AP Physics"
+                ],
+                "HISTORY": [
+                    "AP Micro/Macro Economics"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Language"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programming 2",
+                    "Economics. AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Dylan",
+            "LAST_NAME": "Ellis",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "PreCalc",
+                    "Honors PreCalc",
+                    "Calc AB"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "HOnors Chemistry",
+                    "Advanced Chemistry",
+                    "Biology",
+                    "HOnors Biology",
+                    "AP Biology",
+                    "ANatomy and Physiology"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "AP US Government and Politics",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "Honors English 3"
+                ],
+                "ELECTIVE": [
+                    "Intro to Business"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Arden",
+            "LAST_NAME": "Han",
+            "EXPERTISE": {
+                "MATH": [],
+                "SCIENCE": [],
+                "HISTORY": [
+                    "AP Human Geography",
+                    "AP Comparative Government",
+                    "AP US Government",
+                    "APUSH"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4",
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Joournalism",
+                    "Advanced Media Lab",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Acting 1",
+                    "Consumer Economics"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "John",
+            "LAST_NAME": "Harvey",
+            "EXPERTISE": {
+                "MATH": [
+                    "Al/Geo",
+                    "Algebra 1",
+                    "Geometry",
+                    "Honors Geometry",
+                    "Algebra 2",
+                    "Honors Algebra 2",
+                    "Pre-Clac",
+                    "Honors Pre-Calc",
+                    "AP Calc AB",
+                    "AB Calc BC"
+                ],
+                "SCIENCE": [],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Lara",
+            "LAST_NAME": "Kotak",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Algebra 2",
+                    "Algebra 2",
+                    "Honors PreCalc",
+                    "AP Calc AB and BC"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Chemistry",
+                    "Advanced Chemistry",
+                    "Biology",
+                    "Honors Biology",
+                    "Anatomy and Physiology"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "American Government",
+                    "AP Human Geography"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors English 2",
+                    "AP Lang and Composition"
+                ],
+                "ELECTIVE": [
+                    "Photo 1",
+                    "Ceramics 1",
+                    "AP Human Geography"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Lin",
+            "LAST_NAME": "Liu",
+            "EXPERTISE": {
+                "MATH": [
+                    "Any math except AP Stats"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Chinese 1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "ENGLISH": [],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Abbie",
+            "LAST_NAME": "Martinson",
+            "EXPERTISE": {
+                "MATH": [],
+                "SCIENCE": [
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "Humanities 1",
+                    "AP Government and Politics"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Anna-Maria",
+            "LAST_NAME": "Olarov",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Algebra 2",
+                    "HOnors PreCalc",
+                    "PreCalc",
+                    "AP Calculus BC"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Chemistry",
+                    "Biology",
+                    "Honors Biology",
+                    "Advanced Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Aaryana",
+            "LAST_NAME": "Parekh",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Precalculus",
+                    "AP Statistics"
+                ],
+                "SCIENCE": [
+                    "Honors Biology",
+                    "AP Biology"
+                ],
+                "HISTORY": [
+                    "AP Psych"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Friday"
+            ],
+            "GRADE": "10",
+            "FIRST_NAME": "Zoya",
+            "LAST_NAME": "Photowala",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 1",
+                    "Honors Algebra 2",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Chemistry"
+                ],
+                "HISTORY": [
+                    "AP Human Geography"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Julie",
+            "LAST_NAME": "Piot",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors PreCalc",
+                    "AP Calc BC",
+                    "AP Stats"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "HOnors Biology",
+                    "AP Physics",
+                    "AP Bio"
+                ],
+                "HISTORY": [
+                    "AP World History",
+                    "US Government",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Trenton",
+            "LAST_NAME": "Polk",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Algebra 2",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "AP Environmental Science"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "ENGLISH": [
+                    "Honors English 2 Journalism",
+                    "English 2 Journalism",
+                    "English 1",
+                    "English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Kayley",
+            "LAST_NAME": "Queen",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Advanced Chem",
+                    "Honors Biology",
+                    "Chemistry"
+                ],
+                "HISTORY": [
+                    "AP US History",
+                    "Intro to Psych"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors Journalism",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Photography"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Hannah",
+            "LAST_NAME": "Robertz",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 2",
+                    "PreCalc"
+                ],
+                "SCIENCE": [
+                    "Honors Biology",
+                    "Honors Chemistry",
+                    "Advanced Chemistry",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "World History",
+                    "Cultural Anthropology",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Friday"
+            ],
+            "GRADE": "10",
+            "FIRST_NAME": "Michelle",
+            "LAST_NAME": "Ruan",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry"
+                ],
+                "HISTORY": [
+                    "AP World History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "Honors Engish 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Noor",
+            "LAST_NAME": "Sekhon",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 1",
+                    "Algebra 1",
+                    "Honors Algebra 2",
+                    "Algebra 2",
+                    "Honors Pre-Calc",
+                    "Pre-Calc"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1",
+                    "Physics"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Isabel",
+            "LAST_NAME": "Shuman",
+            "EXPERTISE": {
+                "MATH": [
+                    "PreCalc"
+                ],
+                "SCIENCE": [],
+                "HISTORY": [
+                    "AP US History",
+                    "US Government",
+                    "US History",
+                    "AP US Gov"
+                ],
+                "WORLD_LANGUAGE": [
+                    "German 1",
+                    "German 2",
+                    "German 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Honors English 3",
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Srivathsa",
+            "LAST_NAME": "Veerabrahmha",
+            "EXPERTISE": {
+                "MATH": [
+                    "AP Stats",
+                    "AP Calc AB",
+                    "Honors Algebra 2",
+                    "Honors Geo"
+                ],
+                "SCIENCE": [
+                    "AP Biology",
+                    "Honors Chemistry",
+                    "AP Physics 1",
+                    "AP Physics 2",
+                    "Honors Geometry"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "AP Human",
+                    "Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "AP Lang",
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Research and Design"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Owen",
+            "LAST_NAME": "Woker",
+            "EXPERTISE": {
+                "MATH": [],
+                "SCIENCE": [
+                    "Chemistry"
+                ],
+                "HISTORY": [
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "English 2 Journalism"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Parker",
+            "LAST_NAME": "Akkeron",
+            "EXPERTISE": {
+                "MATH": [],
+                "SCIENCE": [],
+                "HISTORY": [
+                    "World History",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Honors English 3"
+                ],
+                "ELECTIVE": [
+                    "Sports Medicine",
+                    "Tech Edge"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Thursday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Ryan",
+            "LAST_NAME": "Chen",
+            "EXPERTISE": {
+                "MATH": [
+                    "Calc BC and lower"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "AP Physics"
+                ],
+                "HISTORY": [
+                    "AP World History",
+                    "AP US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 3 and below"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Web Page Design",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Friday"
+            ],
+            "GRADE": "10",
+            "FIRST_NAME": "Zachary",
+            "LAST_NAME": "Chiaramonte",
+            "EXPERTISE": {
+                "MATH": [
+                    "Al/Geo",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "French 1"
+                ],
+                "ENGLISH": [
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Brody",
+            "LAST_NAME": "Chien ",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Algebra 2",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "AP World History",
+                    "AP Comparative Government",
+                    "AP US Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "English 1",
+                    "English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Turjo",
+            "LAST_NAME": "Debnath",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2",
+                    "AP Calc BC/AB",
+                    "Geometry"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1"
+                ],
+                "HISTORY": [
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "German 1",
+                    "German 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 2",
+                    "English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Tyler",
+            "LAST_NAME": "Field",
+            "EXPERTISE": {
+                "MATH": [
+                    "PreCalc",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [],
+                "ELECTIVE": [
+                    "Programming 1",
+                    "Programming 2",
+                    "Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Luke",
+            "LAST_NAME": "Golobitsh",
+            "EXPERTISE": {
+                "MATH": [
+                    "Geometry",
+                    "Honors Geometry",
+                    "Algebra 2",
+                    "Honors Algebra 2",
+                    "Algebra 1",
+                    "Honors Algebra 1 "
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "20th Century"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1"
+                ],
+                "ENGLISH": [],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programing 2",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Tuesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Alyssa",
+            "LAST_NAME": "Hale",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Al/Geo",
+                    "Honors Geometry",
+                    "Algebra 2",
+                    "Honors Algebra 2",
+                    "PreCalc",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "Biology",
+                    "Physics",
+                    "AP Physics",
+                    "Biotech"
+                ],
+                "HISTORY": [
+                    "World Cultures",
+                    "AP Comparative Government",
+                    "AP Government",
+                    "AP US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors English 2 Journalism",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Photo 1",
+                    "Photo 2",
+                    "Culinary"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Aarohan",
+            "LAST_NAME": "Joshi",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Honors Geometry",
+                    "Geometry",
+                    "Pre-Calc",
+                    "Honors Pre-Calc"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Honors Biology",
+                    "Physics",
+                    "AP Physics"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "US Government",
+                    "Economics",
+                    "US History",
+                    "AP US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors English 2",
+                    "AP Lang",
+                    "Engish 3"
+                ],
+                "ELECTIVE": [
+                    "AP Computer Science",
+                    "Programming 1",
+                    "Programming 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Evelyn",
+            "LAST_NAME": "Kiefer",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 2",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Biology",
+                    "Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Chinese 1"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "English 1",
+                    "English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Christina",
+            "LAST_NAME": "Mantel",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Geometry",
+                    "HOnors Geometry",
+                    "Algebra 2",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Chemistry",
+                    "Biology",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World Cultures",
+                    "American Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "English 1",
+                    "Honors English 2",
+                    "English 2"
+                ],
+                "ELECTIVE": [
+                    "Drafting 1",
+                    "Drafting 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Julia",
+            "LAST_NAME": "May",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Biology"
+                ],
+                "HISTORY": [
+                    "World Cultures",
+                    "US Government",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "English 1",
+                    "Honors English 2",
+                    "English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "10",
+            "FIRST_NAME": "Tessa",
+            "LAST_NAME": "McMains",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Geometry",
+                    "Geometry",
+                    "Honors Algebra 2",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Chemistry"
+                ],
+                "HISTORY": [
+                    "World Cultures"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Supriya",
+            "LAST_NAME": "Navnith",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 2",
+                    "Honors Algebra 2",
+                    "PreCalc",
+                    "Honors PreCalc",
+                    "AB Calculus",
+                    "BC Calculus"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "AP US History",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [
+                    "English 1",
+                    "English 2",
+                    "Honors English 2",
+                    "Honors English 1",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "AP Comparative Government"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Maxie",
+            "LAST_NAME": "Oasay",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 2",
+                    "Algebra 1",
+                    "Al/Geo"
+                ],
+                "SCIENCE": [
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "English 2",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Advanced Media Lab"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Jack",
+            "LAST_NAME": "Ruzicka",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Al/Geo",
+                    "Geometry"
+                ],
+                "SCIENCE": [],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [
+                    "English 2 Journalism"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Tuesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Trey",
+            "LAST_NAME": "Stade",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [],
+                "HISTORY": [
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors Englsh 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Tuesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Andrew",
+            "LAST_NAME": "Sullivan",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "AP Comparative Government",
+                    "World Cultures"
+                ],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                ""
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Caleb",
+            "LAST_NAME": "Uson",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Honors Pre-Calc"
+                ],
+                "SCIENCE": [
+                    "Honors Physics",
+                    "Honors Biology",
+                    "Honors Chemistry",
+                    "Anatomy and Physiology",
+                    "AP Biology"
+                ],
+                "HISTORY": [
+                    "AP World",
+                    "APUSH"
+                ],
+                "WORLD_LANGUAGE": [
+                    "AP Spanish Language and Culture"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Samuel",
+            "LAST_NAME": "Wang",
+            "EXPERTISE": {
+                "MATH": [
+                    "Calc BC/AB",
+                    "Geometry",
+                    "Honors Algera 2",
+                    "ALgebra 2",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Honors Biology",
+                    "AP Physics"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Chinese 1",
+                    "Chinese 2",
+                    "Chinese 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Honors English 3",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Prgramming 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Liam",
+            "LAST_NAME": "Zylstra",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Honors Pre-Calc",
+                    "AP Stats",
+                    "Honors Algebra 2",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1",
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "AP Government",
+                    "AP Comparative Government",
+                    "AP World History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Latin 1",
+                    "Latin 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Intro to Business APCSA"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Patrick",
+            "LAST_NAME": "Baldinger",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "PreCalc"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [],
+                "ELECTIVE": [
+                    "AP Computer Science",
+                    "Programming 1",
+                    "Programming 2",
+                    "Software Engineering 1",
+                    "Software Engineering 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Nadia",
+            "LAST_NAME": "Baria",
+            "EXPERTISE": {
+                "MATH": [
+                    "PreCalc",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "AP US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Annabelle",
+            "LAST_NAME": "Chang",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Honors Algebra 2",
+                    "PreCalc",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Honors Biology",
+                    "Chemistry",
+                    "Anatomy",
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "Humanities"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "SPanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors English 2",
+                    "English 3",
+                    "Honors English 3"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Samika",
+            "LAST_NAME": "Karumuri",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Algebra 2",
+                    "Algebra 2",
+                    "Pre-Calc",
+                    "Honors PreCalc",
+                    "Calc AB"
+                ],
+                "SCIENCE": [
+                    "Honors Biology",
+                    "Biology"
+                ],
+                "HISTORY": [
+                    "AP Human Geography",
+                    "Government",
+                    "AP Psych",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Honors English 3",
+                    "AP Lang",
+                    "English 1",
+                    "English 2",
+                    "English 3",
+                    "ENglish 4"
+                ],
+                "ELECTIVE": [
+                    "AP Computer Science",
+                    "Computer Programming 1",
+                    "Computer Programming 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tueday",
+                "Thursday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Beth",
+            "LAST_NAME": "Lane",
+            "EXPERTISE": {
+                "MATH": [
+                    "Al/Geo",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Advanced Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "Economics"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Ceramics",
+                    "Early Childhood Education"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Audrey",
+            "LAST_NAME": "Liu",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra",
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Al/Geo",
+                    "PreCalc"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "AP Psychology"
+                ],
+                "HISTORY": [
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "English 1",
+                    "English 2",
+                    "Engish 3",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Aayush",
+            "LAST_NAME": "Modi",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors PreCalc",
+                    "Calc BC",
+                    "MVC",
+                    "ELA",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World Cultures"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors ENglish 1",
+                    "Honors ENglish 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "AP Computer Science",
+                    "Programming 1",
+                    "Ceramics 1"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Hailyn",
+            "LAST_NAME": "Mutrie",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Honors Biology",
+                    "Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "2",
+                    "3"
+                ],
+                "ENGLISH": [
+                    "Honors ENglish 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Jack",
+            "LAST_NAME": "Robertz",
+            "EXPERTISE": {
+                "MATH": [
+                    "Geometry",
+                    "Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "US History",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Cultural Anthropology"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Matthew",
+            "LAST_NAME": "Ru",
+            "EXPERTISE": {
+                "MATH": [
+                    "Math up to Calc AB"
+                ],
+                "SCIENCE": [
+                    "AP Physics 1",
+                    "Physics 2"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "English 2"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programming 2",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Bryce",
+            "LAST_NAME": "Shen",
+            "EXPERTISE": {
+                "MATH": [
+                    "Calc BC",
+                    "PreCalc",
+                    "Algebra 1",
+                    "Algera 2"
+                ],
+                "SCIENCE": [
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "AP US Government",
+                    "AP US History",
+                    "AP Micro",
+                    "AP Macro"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "Honors English 2",
+                    "English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Julien",
+            "LAST_NAME": "Song",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Algebra 2",
+                    "PreCalc"
+                ],
+                "SCIENCE": [
+                    "AP Environmental Science"
+                ],
+                "HISTORY": [
+                    "AP Comparative",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3",
+                    "French 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Frank",
+            "LAST_NAME": "Su",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors PreCalc",
+                    "Calc BC",
+                    "MVC",
+                    "ELA",
+                    "Honors Geometry"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "AP Physics 1",
+                    "AP Physics C",
+                    "AP Chemistry",
+                    "AP Psych"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "World History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4",
+                    "AP Chinese"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming",
+                    "AP Computer Sciece"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Andrew",
+            "LAST_NAME": "Tang",
+            "EXPERTISE": {
+                "MATH": [
+                    "Any math"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "AP Chemistry",
+                    "Honors Biology",
+                    "AP Biology",
+                    "AP Physics"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors Engish 1",
+                    "Honors English 2",
+                    "AP English Language"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Sophia",
+            "LAST_NAME": "Zhao",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "Honors PreCalc",
+                    "AP Calc AB",
+                    "Calc BC"
+                ],
+                "SCIENCE": [
+                    "Biology",
+                    "Chemistry",
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "AP Chemistry"
+                ],
+                "HISTORY": [
+                    "AP World",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Art"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                ""
+            ],
+            "GRADE": "10",
+            "FIRST_NAME": "Vihan",
+            "LAST_NAME": "Shah",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors Geometry",
+                    "Algebra 1"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry"
+                ],
+                "HISTORY": [
+                    "AP World History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1"
+                ],
+                "ENGLISH": [
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Thursday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Izel",
+            "LAST_NAME": "Diaz",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Geometry"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Chinese 1"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "English 2"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programming 2",
+                    "Consumer Economics"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Alyse",
+            "LAST_NAME": "Hoffman",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Tuesday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Jackson",
+            "LAST_NAME": "Falk",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 1"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Biology"
+                ],
+                "HISTORY": [
+                    "World Cultures",
+                    "American Government",
+                    "Economics"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "English 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Angela",
+            "LAST_NAME": "Ping",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Geometry",
+                    "Honors Algebra 2",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Honors Biology"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Chinese Mandarin 1",
+                    "Chinese Mandarin 2",
+                    "Chinese Mandarin 3",
+                    "Chinese Mandarin 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2 Journalism"
+                ],
+                "ELECTIVE": [
+                    "Programming 1",
+                    "Programming 2",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Ammar",
+            "LAST_NAME": "Bhanpuri",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors Geometry",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "Advanced Chemistry",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Intro to Business",
+                    "Photo 1"
+                ]
+            }
+        },
+        {
+            "LUNCH": "4",
+            "DAYS": [
+                "Monday",
+                "Tuesday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Matthew",
+            "LAST_NAME": "Randal",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2",
+                    "Honors Algebra 1",
+                    "Honors PreCalc",
+                    "AP Calc BC"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "American Government",
+                    "US History",
+                    "Economics",
+                    "AP Psych"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3",
+                    "Spanish 4"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "AP Computer Science",
+                    "Software Engineering 1",
+                    "Software Engineering 2",
+                    "Computer Programming 1",
+                    "Computer Programming 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Mika",
+            "LAST_NAME": "Chang",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Honors Geometry",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "AP US History"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Chinese (any level)"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2: Journalism"
+                ],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programming 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Alessandra",
+            "LAST_NAME": "Woods",
+            "EXPERTISE": {
+                "MATH": [
+                    "Geometry",
+                    "Algebra 1",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "World History",
+                    "AP Comparative Government",
+                    "AP US Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "SPanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Companion Animal Science",
+                    "Vet Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Alyza",
+            "LAST_NAME": "Grubich",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "PreCalc"
+                ],
+                "SCIENCE": [
+                    "Biology"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "Cultures",
+                    "Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "AP Lang"
+                ],
+                "ELECTIVE": [
+                    "Intro to Business",
+                    "Culinary",
+                    "Interior Design"
+                ]
+            }
+        },
+        {
+            "LUNCH": "5",
+            "DAYS": [
+                "Monday",
+                "Wednesday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Sophia",
+            "LAST_NAME": "Shah",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2",
+                    "Honor PreCalc",
+                    "AP Stats"
+                ],
+                "SCIENCE": [
+                    "Physics"
+                ],
+                "HISTORY": [
+                    "Humanities",
+                    "US History",
+                    "American Government"
+                ],
+                "WORLD_LANGUAGE": [],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2",
+                    "Honors English 3",
+                    "Creative Writing",
+                    "Lit Themes"
+                ],
+                "ELECTIVE": [
+                    "Marketing",
+                    "Intro to Business",
+                    "Incubator"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Aubryanna",
+            "LAST_NAME": "Jarchow",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors Pre Calc"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [
+                    "US History",
+                    "American Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2"
+                ],
+                "ENGLISH": [
+                    "Honors English 2"
+                ],
+                "ELECTIVE": [
+                    "Animal Science 1",
+                    "Animal Science 2"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Ian",
+            "LAST_NAME": "Denken",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Geometry",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "AP Physics",
+                    "HOnors Biology"
+                ],
+                "HISTORY": [
+                    "World HIstory",
+                    "AP Comparative Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors ENglish 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Thursday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Ronith",
+            "LAST_NAME": "Manikonda",
+            "EXPERTISE": {
+                "MATH": [
+                    "Honors Algebra 2",
+                    "Honors PreCalc",
+                    "Algebra 1"
+                ],
+                "SCIENCE": [
+                    "Honors Chemistry",
+                    "Honors Biology"
+                ],
+                "HISTORY": [
+                    "AP Government",
+                    "World Cultures"
+                ],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [],
+                "ELECTIVE": [
+                    "Computer Programming 1",
+                    "Computer Programming 2",
+                    "AP Computer Science"
+                ]
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Rhea",
+            "LAST_NAME": "Ganpule",
+            "EXPERTISE": {
+                "MATH": [
+                    "Algebra 1",
+                    "Algebra 2",
+                    "PreCalc",
+                    "Honors Algebra 2",
+                    "Honors PreCalc"
+                ],
+                "SCIENCE": [
+                    "Chemistry",
+                    "Biology",
+                    "Honors Chemistry",
+                    "Honors Biology",
+                    "PHysics",
+                    "AP Physics"
+                ],
+                "HISTORY": [
+                    "Government",
+                    "AP Government"
+                ],
+                "WORLD_LANGUAGE": [
+                    "French 1",
+                    "French 2",
+                    "French 3"
+                ],
+                "ENGLISH": [
+                    "English 1",
+                    "Honors English 1",
+                    "English 2",
+                    "Honors ENglish 2"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "GRADE": "12",
+            "FIRST_NAME": "Jack",
+            "LAST_NAME": "Halama",
+            "EXPERTISE": {
+                "MATH": [
+                    "AP Calc BC",
+                    "Honors PreCalc",
+                    "Honors Geo",
+                    "Honors ALgebra 2"
+                ],
+                "SCIENCE": [
+                    "Honors AP Chemistry",
+                    "Honors Biology",
+                    "AP Physics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "AP Lang",
+                    "Honors English 2 Journalism",
+                    "Honors English 1"
+                ],
+                "ELECTIVE": []
+            }
+        },
+        {
+            "LUNCH": "6",
+            "DAYS": [
+                "Monday",
+                "Wednesday",
+                "Friday"
+            ],
+            "GRADE": "11",
+            "FIRST_NAME": "Cherise",
+            "LAST_NAME": "Lee",
+            "EXPERTISE": {
+                "MATH": [
+                    "AP Stats",
+                    "Honors Algebra 1",
+                    "Honors Algebra 2"
+                ],
+                "SCIENCE": [
+                    "AP Biology",
+                    "Honors Chemistry",
+                    "AP PHysics 1"
+                ],
+                "HISTORY": [],
+                "WORLD_LANGUAGE": [
+                    "Spanish 1",
+                    "Spanish 2",
+                    "Spanish 3"
+                ],
+                "ENGLISH": [
+                    "Honors English 1",
+                    "Honors English 2"
+                ],
+                "ELECTIVE": []
+            }
+        }
+    ]
+}

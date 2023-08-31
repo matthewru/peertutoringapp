@@ -1,8 +1,9 @@
 (async () => {
 
     // fetch tutor data and create a list of tutor objects
-    const tutorsJson = await fetch("/static/testdata.json").then(res => res.json());
-    const tutors = tutorsJson.peerTutors;
+    const tutorsJson = await fetch("/static/tutoringdata2324.json").then(res => res.json());
+    const testtutorsJson = await fetch("/static/testdata.json").then(res => res.json());
+    const tutors = tutorsJson.peer_tutors;
     const classes = await fetch("/static/classestutored.json").then(res => res.json());
 
     let classFilters = {}; // object to keep track of which classes are selected for filtering
@@ -11,9 +12,9 @@
     await createFilters(classes);
 
     // create a seperate list of tutor objects for each period
-    let p4Tutors = tutors.filter(tutor => tutor.lunch.includes("4"));
-    let p5Tutors = tutors.filter(tutor => tutor.lunch.includes("5"));
-    let p6Tutors = tutors.filter(tutor => tutor.lunch.includes("6"));
+    let p4Tutors = tutors.filter(tutor => tutor.LUNCH.includes("4"));
+    let p5Tutors = tutors.filter(tutor => tutor.LUNCH.includes("5"));
+    let p6Tutors = tutors.filter(tutor => tutor.LUNCH.includes("6"));
 
     // to keep track of the selected period and day
     let selectedPeriod = 4; 
@@ -138,11 +139,11 @@
         let displayedTutors = updateFilters();
 
         // create an array for each day using displayedTutors
-        let monTutors = displayedTutors.filter(tutor => tutor.days.includes("Monday"));
-        let tueTutors = displayedTutors.filter(tutor => tutor.days.includes("Tuesday"));
-        let wedTutors = displayedTutors.filter(tutor => tutor.days.includes("Wednesday"));
-        let thuTutors = displayedTutors.filter(tutor => tutor.days.includes("Thursday"));
-        let friTutors = displayedTutors.filter(tutor => tutor.days.includes("Friday"));
+        let monTutors = displayedTutors.filter(tutor => tutor.DAYS.includes("Monday"));
+        let tueTutors = displayedTutors.filter(tutor => tutor.DAYS.includes("Tuesday"));
+        let wedTutors = displayedTutors.filter(tutor => tutor.DAYS.includes("Wednesday"));
+        let thuTutors = displayedTutors.filter(tutor => tutor.DAYS.includes("Thursday"));
+        let friTutors = displayedTutors.filter(tutor => tutor.DAYS.includes("Friday"));
 
         // clear each divs innerHTML
         monSchedule.innerHTML = "";
@@ -156,35 +157,35 @@
             let tutor = monTutors[i];
             let tutorDiv = document.createElement("div");
             tutorDiv.classList.add("tutor-week-view");
-            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tutorDiv.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME + "  (" + tutor.GRADE + ")";
             monSchedule.appendChild(tutorDiv);
         }
         for(let i = 0; i < tueTutors.length; i++){
             let tutor = tueTutors[i];
             let tutorDiv = document.createElement("div");
             tutorDiv.classList.add("tutor-week-view");
-            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tutorDiv.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME + "  (" + tutor.GRADE + ")";
             tueSchedule.appendChild(tutorDiv);
         }
         for(let i = 0; i < wedTutors.length; i++){
             let tutor = wedTutors[i];
             let tutorDiv = document.createElement("div");
             tutorDiv.classList.add("tutor-week-view");
-            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tutorDiv.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME + "  (" + tutor.GRADE + ")";
             wedSchedule.appendChild(tutorDiv);
         }
         for(let i = 0; i < thuTutors.length; i++){
             let tutor = thuTutors[i];
             let tutorDiv = document.createElement("div");
             tutorDiv.classList.add("tutor-week-view");
-            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tutorDiv.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME + "  (" + tutor.GRADE + ")";
             thuSchedule.appendChild(tutorDiv);
         }
         for(let i = 0; i < friTutors.length; i++){
             let tutor = friTutors[i];
             let tutorDiv = document.createElement("div");
             tutorDiv.classList.add("tutor-week-view");
-            tutorDiv.innerHTML = tutor.name+ "  (" + tutor.grade + ")";
+            tutorDiv.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME + "  (" + tutor.GRADE + ")";
             friSchedule.appendChild(tutorDiv);
         }
 
@@ -208,7 +209,7 @@
         else if(day == 5){dayString = "Friday";}
 
         // filter displayedTutors to only include tutors available on the selected day
-        displayedTutors = displayedTutors.filter(tutor => tutor.days.includes(dayString));
+        displayedTutors = displayedTutors.filter(tutor => tutor.DAYS.includes(dayString));
         
         // clear the dayview divs innerHTML
         daySchedule.innerHTML = "";
@@ -243,15 +244,15 @@
         tutorExpertise.className = "tutor-expertise";
         
         daysString = "Days: ";
-        for(let i = 0; i < tutor.days.length; i++){
-            daysString += tutor.days[i];
-            if(i != tutor.days.length - 1){
+        for(let i = 0; i < tutor.DAYS.length; i++){
+            daysString += tutor.DAYS[i];
+            if(i != tutor.DAYS.length - 1){
                 daysString += ", ";
             }
         }
-        tutorName.innerHTML = tutor.name;
-        tutorGrade.innerHTML = "Gr: " + tutor.grade;
-        tutorDays.innerHTML = daysString;
+        tutorName.innerHTML = tutor.FIRST_NAME +  " " + tutor.LAST_NAME;
+        tutorGrade.innerHTML = "<strong> Grade: " + tutor.GRADE + "</strong>";
+        tutorDays.innerHTML = "<strong>" + daysString + "</strong>";
         tutorHeader.appendChild(tutorName);
         tutorHeader.appendChild(tutorDays);
         tutorHeader.appendChild(tutorGrade);
@@ -271,23 +272,32 @@
         const tutorExpertise = document.createElement("div");
         const tutorExpertiseHeader = document.createElement("h3");
         tutorExpertiseHeader.className = "tutor-expertise-header";
-        tutorExpertiseHeader.innerHTML = "Expertise: ";
+        tutorExpertiseHeader.innerHTML = "Expertise: <br>";
         tutorExpertise.appendChild(tutorExpertiseHeader);
 
-        for(const subject in tutor.expertise){
-            if(tutor.expertise[subject].length == 0){continue;} // skip subjects with no expertise (empty array)
+        const subjectMap = new Map([
+                ['MATH', 'Math'], 
+                ['SCIENCE', 'Science'],
+                ['ENGLISH', 'English'],
+                ['WORLD_LANGUAGE', 'World Language'],
+                ['HISTORY', 'History'],
+                ['ELECTIVE', 'Elective']
+        ])
+
+        for(const subject in tutor.EXPERTISE){
+            if(tutor.EXPERTISE[subject].length == 0){continue;} // skip subjects with no expertise (empty array)
             const tutorSubject = document.createElement("h4");
             tutorSubject.className = "tutor-expertise-subject";
-            tutorSubject.innerHTML = subject + ": ";
+            tutorSubject.innerHTML = subjectMap.get(subject) + ": ";
             tutorExpertise.appendChild(tutorSubject);
             let expertise = document.createElement("p");
             expertise.className = "tutor-expertise-classes";
-            for(let i = 0; i < tutor.expertise[subject].length; i++){
+            for(let i = 0; i < tutor.EXPERTISE[subject].length; i++){
                 
-                expertise.innerHTML += tutor.expertise[subject][i];
-                if (i != tutor.expertise[subject].length - 1){expertise.innerHTML += ", ";}
+                expertise.innerHTML += tutor.EXPERTISE[subject][i];
+                if (i != tutor.EXPERTISE[subject].length - 1){expertise.innerHTML += ", ";}
             } 
-            expertise.innerHTML += "|"
+            expertise.innerHTML += "<br>"
             tutorExpertise.appendChild(expertise);
         }
         return tutorExpertise;
@@ -435,7 +445,7 @@
         for(const subject in classes){
             if(classFilters[subject] == false){continue;} // skip subjects that are not selected
             for(let i = 0; i < classes[subject].length; i++){
-                if(classFilters[classes[subject][i]] == true && (tutor.expertise[subject] == null || !tutor.expertise[subject].includes(classes[subject][i]))){
+                if(classFilters[classes[subject][i]] == true && (tutor.EXPERTISE[subject] == null || !tutor.EXPERTISE[subject].includes(classes[subject][i]))){
                     return false;
                 }
             }
